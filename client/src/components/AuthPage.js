@@ -38,17 +38,18 @@ export default class AuthPage extends React.Component {
             });
             form.validateFields((err, values) => {
                 // Handle authentication here
-                let {userEmail, password} = values
-                signin({variables: 
-                    {email: userEmail,
-                    password: password}});
-                setTimeout(() => this.setState({
-                    confirmLoading: false
-                }), 2000)
                 if (err) {
                     return;
                 }
                 console.log('Received values of form: ', values);
+                signin(
+                    {
+                        variables: values,
+                        update: (cache, { data }) => {
+                            this.setState({ confirmLoading: false })
+                            console.log("Received data:", data)
+                        }
+                    });
                 form.resetFields();
                 this.setState({ visible: false });
             });
@@ -61,17 +62,17 @@ export default class AuthPage extends React.Component {
             <div>
                 <Button type={this.props.toggleBtnType} onClick={this.showModal}>{this.props.toggleBtnText}</Button>
                 <Mutation
-                mutation={LOGIN_MUTATION}>
-                {(loginMutation, { data }) => (<AuthForm
-                    wrappedComponentRef={(formRef) => {
-                        this.formRef = formRef;
-                    }}
-                    visible={this.state.visible}
-                    onCancel={this.handleCancel}
-                    onAuth={this.handleSignin}
-                    confirmLoading={this.state.confirmLoading}
-                    mutation={loginMutation}
-                />)}
+                    mutation={LOGIN_MUTATION}>
+                    {(loginMutation, { data }) => (<AuthForm
+                        wrappedComponentRef={(formRef) => {
+                            this.formRef = formRef;
+                        }}
+                        visible={this.state.visible}
+                        onCancel={this.handleCancel}
+                        onAuth={this.handleSignin}
+                        confirmLoading={this.state.confirmLoading}
+                        mutation={loginMutation}
+                    />)}
                 </Mutation>
             </div>
         );
