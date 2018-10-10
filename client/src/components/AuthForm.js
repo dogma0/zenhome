@@ -19,10 +19,10 @@ export default Form.create()(
                 >
                     <Form className="login-form">
                         <FormItem>
-                            {getFieldDecorator('userEmail', {
+                            {getFieldDecorator('email', {
                                 rules: [{ required: true, message: 'Please input your email!' }],
                             })(
-                                <Input prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Email" />
+                                <Input prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />} placeholder="Email" />
                             )}
                         </FormItem>
                         <FormItem>

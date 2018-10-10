@@ -1,51 +1,51 @@
-type User {
-    firstName: String!
-    lastName: String!
-    email: String!
-    pw: String!
-    offers: [Offer!]!
-    tours: [Tour!]!
-}
+# type User {
+#     firstName: String!
+#     lastName: String!
+#     email: String!
+#     pw: String!
+#     offers: [Offer!]!
+#     tours: [Tour!]!
+# }
 
-type Offer {
-    address: String!
-    financing: String!
-    desiredPrice: String!
-}
+# type Offer {
+#     address: String!
+#     financing: String!
+#     desiredPrice: String!
+# }
 
-type Tour {
-    address: String!
-    availableTimeRange: TimeRange
-}
+# type Tour {
+#     address: String!
+#     availableTimeRange: TimeRange
+# }
 
-type Date {
-    year: String
-    month: String
-    hour: String
-    minute: String
-}
+# type Date {
+#     year: String
+#     month: String
+#     hour: String
+#     minute: String
+# }
 
-type TimeRange {
-    startTime: Date
-    endTime: Date
-}
+# type TimeRange {
+#     startTime: Date
+#     endTime: Date
+# }
 
 type Query {
-    allUsers: [User!]!
+    # allUsers: [User!]!
+    hello: String!
 }
 
 type Mutation {
-  signup(email: String!, password: String!, name: String!): AuthPayload
-  login(email: String!, password: String!): AuthPayload
+  signup(email: String!, password: String!): AuthPayload!
+  login(email: String!, password: String!): AuthPayload!
 }
 
 type AuthPayload {
   token: String
-  user: User
 }
 
-type User {
-  id: ID!
-  name: String!
-  email: String!
-}
+# type User {
+#   id: ID!
+#   name: String!
+#   email: String!
+# }
