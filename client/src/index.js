@@ -1,17 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import styled from 'styled-components'
+import ApolloClient from "apollo-client";
+import { ApolloProvider } from "react-apollo";
+import { createHttpLink } from 'apollo-link-http';
+import { setContext } from 'apollo-link-context';
+import { InMemoryCache } from 'apollo-cache-inmemory';
+import { App } from './components/App'
+import './index.css'
 
-const Div = styled.div`
-  margin: 40px;
-  border: 5px outset pink;
-  &:hover {
-   background-color: yellow;
- }
-`;
+const httpLink = createHttpLink({
+  uri: 'http://localhost:4000/graphql',
+});
+
+const authLink = setContext((_, { headers }) => {
+  // get the authentication token from local storage if it exists
+  const token = localStorage.getItem('token');
+  // return the headers to the context so httpLink can read them
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : "",
+    }
+  }
+});
+
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache()
+});
+
 
 const Index = () => {
-  return <Div>Hello React!!</Div>;
+  return <div><App></App></div>;
 };
 
-ReactDOM.render(<Index />, document.getElementById("root"));
+ReactDOM.render(
+  <ApolloProvider client={client}>
+    <Index></Index>
+  </ApolloProvider>, document.getElementById("root"));
