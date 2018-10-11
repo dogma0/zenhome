@@ -1,14 +1,27 @@
 {
-  "name": "onion-home-server",
+  "name": "typescript-graphql-auth",
   "version": "1.0.0",
-  "main": "server.js",
-  "license": "MIT",
+  "description": "This example demonstrates how to implement a GraphQL server with an email-password-based authentication workflow based on Prisma & graphql-yoga.",
+  "main": "index.js",
+  "repository": "https://github.com/prismagraphql/prisma/tree/master/examples",
+  "author": "Prisma",
+  "license": "Apache 2",
+  "scripts": {
+    "start": "tsc && nodemon build/index.js",
+    "graphql-resolver-codegen": "graphql-resolver-codegen"
+  },
   "dependencies": {
-    "apollo-server": "^2.1.0",
-    "graphql": "^14.0.2",
-    "graphql-import": "^0.7.1"
+    "@types/jsonwebtoken": "^7.2.8",
+    "bcrypt": "^3.0.0",
+    "graphql": "^0.13.2",
+    "graphql-yoga": "^1.16.1",
+    "jsonwebtoken": "^8.3.0",
+    "prisma-client-lib": "1.19.0-beta.2"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "@types/bcrypt": "3.0.0",
+    "graphql-resolver-codegen": "0.3.0",
+    "ts-node": "7.0.1",
+    "typescript": "3.1.2"
   }
 }
