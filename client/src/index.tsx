@@ -6,6 +6,7 @@ import { createHttpLink } from 'apollo-link-http';
 import { setContext } from 'apollo-link-context';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { App } from './components/App'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 
 const httpLink = createHttpLink({
@@ -29,9 +30,10 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-const Index = () => <App></App>
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <Index></Index>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </ApolloProvider>, document.getElementById("root"));

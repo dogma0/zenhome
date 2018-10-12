@@ -4,6 +4,7 @@ import LoadingStatus from './LoadingStatus'
 import SignupForm from './SignupForm'
 import LoginForm from './LoginForm'
 import ErrorCard from './ErrorCard'
+import { Redirect }  from 'react-router-dom'
 
 interface IAuthForm {
     visible: boolean,
@@ -67,10 +68,10 @@ class AuthForm extends React.Component<IAuthForm> {
                 </Tabs>
                 {(loginError) ?
                     // console.log(JSON.stringify(loginError)):
-                    (<ErrorCard
-                        icon={<Icon type="close-circle" theme="twoTone" />}>
-                        <p>{loginError.message.split(':').slice(1,).join()}</p>
-                    </ErrorCard>) :
+                    <div>
+                        <Icon type="close-circle" theme="twoTone" />
+                        <p>{loginError.message.split(':').slice(1).join()}</p>
+                    </div> :
                     null
                 }
 
