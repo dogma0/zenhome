@@ -1,4 +1,5 @@
 import * as React from 'react'
+import ReactDOM from 'react-dom'
 import { Button, Tabs } from 'antd';
 import AuthForm from './AuthForm'
 import gql from 'graphql-tag'
@@ -36,28 +37,30 @@ export default class AuthPage extends React.Component
 
     handleCancel = () => { this.setState({ visible: false }) }
 
-    handleSignin = (signin: any) => {
+    handleSignin = (authenticate) => {
         return () => {
             const form = this.formRef.props.form;
             this.setState({
                 confirmLoading: true,
             });
-            form.validateFields((err: any, values: any) => {
+            form.validateFields((err, values) => {
                 // Handle authentication here
                 if (err) {
                     return;
                 }
                 console.log('Received values of form: ', values);
-                signin(
+                authenticate(
                     {
                         variables: values,
-                        update: (cache: any, { data }) => {
-                            this.setState({ confirmLoading: false })
+                        update: (cache, { data, error, loading} ) => {
+                            console.log("Received data:", error)
                             console.log("Received data:", data)
+                            console.log("Received data:", loading)
+                            this.setState({ visible: false });
                         }
                     });
                 form.resetFields();
-                this.setState({ visible: false });
+                this.setState({ confirmLoading: false })
             });
         }
     }
@@ -69,17 +72,28 @@ export default class AuthPage extends React.Component
                 <Button type={this.props.toggleBtnType} onClick={this.showModal}>{this.props.toggleBtnText}</Button>
                 <Mutation
                     mutation={LOGIN_MUTATION}>
-                    {(loginMutation, { data }) => (
-                        <AuthForm
-                            wrappedComponentRef={(formRef : any) => {
-                                this.formRef = formRef;
-                            }}
-                            visible={this.state.visible}
-                            onCancel={this.handleCancel}
-                            onAuth={this.handleSignin}
-                            confirmLoading={this.state.confirmLoading}
-                            mutation={loginMutation}
-                        />)}
+                    {(loginMutation, loginState) => (
+                        <Mutation
+                            mutation={SIGNUP_MUTATION}>
+                            {(signupMutation, signupState) => (
+                                (<AuthForm
+                                    wrappedComponentRef={(formRef: any) => {
+                                        this.formRef = formRef;
+                                    }}
+                                    visible={this.state.visible}
+                                    onCancel={this.handleCancel}
+                                    onAuth={this.handleSignin}
+                                    confirmLoading={this.state.confirmLoading}
+                                    loginMutation={loginMutation}
+                                    signupMutation={signupMutation}
+                                    loginData={loginState.data}
+                                    loginError={loginState.error}
+                                    loginLoading={loginState.loading}
+                                    signupData={signupState.data}
+                                    signupError={signupState.error}
+                                    signupLoading={signupState.loading}
+                                />))}
+                        </Mutation>)}
                 </Mutation>
             </div>
         );
