@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import ApolloClient from "apollo-client";
 import { ApolloProvider } from "react-apollo";
 import { createHttpLink } from 'apollo-link-http';
@@ -29,10 +29,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache()
 });
 
-
-const Index = () => {
-  return <div><App></App></div>;
-};
+const Index = () => <App></App>
 
 ReactDOM.render(
   <ApolloProvider client={client}>

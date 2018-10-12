@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import { Row, Col } from 'antd';
 import AuthPage from './AuthPage'
 
@@ -24,7 +24,7 @@ function FAQ() {
   </ul>)
 }
 
-class ServiceDescription extends Component {
+class ServiceDescription extends React.Component {
   render() {
     return (<ul>
       <li>No pressue home touring experiences</li>
@@ -33,7 +33,7 @@ class ServiceDescription extends Component {
   }
 }
 
-class SavingCaculator extends Component {
+class SavingCaculator extends React.Component {
   render() {
     return (
       <p>Saving calculator</p>
@@ -41,7 +41,7 @@ class SavingCaculator extends Component {
   }
 }
 
-export default class Landing extends Component {
+export default class Landing extends React.Component {
   render() {
     return (
       <div className="App">
@@ -50,14 +50,15 @@ export default class Landing extends Component {
           justify='space-around'
           type='flex'
         >
-          <Col span='12'>
+          <Col span={12}>
             <AuthPage
             toggleBtnText='Book a Home Tour' 
             toggleBtnType='primary'/>
           </Col>
-          <Col span='12'>
+          <Col span={12}>
             <AuthPage
-            toggleBtnText='Make an Offer'/>
+            toggleBtnText='Make an Offer'
+            toggleBtnType='default'/>
           </Col>
         </Row>
         <Row>
