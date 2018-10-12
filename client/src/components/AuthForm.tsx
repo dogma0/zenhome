@@ -1,8 +1,9 @@
 import * as React from 'react'
-import { Form, Icon, Modal, Tabs, Card } from 'antd';
+import { Form, Modal, Tabs, Icon } from 'antd';
 import LoadingStatus from './LoadingStatus'
 import SignupForm from './SignupForm'
 import LoginForm from './LoginForm'
+import ErrorCard from './ErrorCard'
 
 interface IAuthForm {
     visible: boolean,
@@ -23,7 +24,7 @@ class AuthForm extends React.Component<IAuthForm> {
     state = { isLoginForm: true }
     render() {
 
-        const { 
+        const {
             visible,
             onCancel,
             onAuth,
@@ -64,19 +65,25 @@ class AuthForm extends React.Component<IAuthForm> {
                         <SignupForm form={form} />
                     </TabPane>
                 </Tabs>
-                    {(loginError || signupError) ?
-                    (  <Card
-                        title={<Icon type="frown" theme="twoTone" style={{color: "#ff4d4fa"}}/>}
-                        style={{ width: 300 }}
-                      >
+                {(loginError) ?
+                    // console.log(JSON.stringify(loginError)):
+                    (<ErrorCard
+                        icon={<Icon type="close-circle" theme="twoTone" />}>
+                        <p>{loginError.message.split(':').slice(1,).join()}</p>
+                    </ErrorCard>) :
+                    null
+                }
+
+                {(signupError) ?
+                    (<ErrorCard
+                    icon={<Icon type="frown" theme="twoTone" style={{ color: "#ff4d4fa" }} />}>
                         <p>We sincerely apologize, a technical issue happened</p>
-                        <p>{JSON.stringify(loginError)}</p>
                         <p>{JSON.stringify(signupError)}</p>
-                      </Card>) :
-                        null
-                    } 
-                    {(loginLoading || signupLoading) ?
-                     <LoadingStatus/> : null}
+                    </ErrorCard>) :
+                    null
+                }
+                {(loginLoading || signupLoading) ?
+                    <LoadingStatus /> : null}
             </Modal>
         );
     }

@@ -45,6 +45,7 @@ export default class AuthPage extends React.Component
             });
             form.validateFields((err, values) => {
                 // Handle authentication here
+                this.setState({ confirmLoading: false })
                 if (err) {
                     return;
                 }
@@ -60,7 +61,6 @@ export default class AuthPage extends React.Component
                         }
                     });
                 form.resetFields();
-                this.setState({ confirmLoading: false })
             });
         }
     }
