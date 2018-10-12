@@ -29,7 +29,7 @@ export default class AuthPage extends React.Component
     private formRef: any
 
     state = {
-        visible: false, // visible is needed in AuthPage to open and close Modal
+        visible: false, 
         confirmLoading: false,
     }
 
@@ -53,10 +53,9 @@ export default class AuthPage extends React.Component
                 authenticate(
                     {
                         variables: values,
-                        update: (cache, { data, error, loading} ) => {
-                            console.log("Received data:", error)
-                            console.log("Received data:", data)
-                            console.log("Received data:", loading)
+                        update: (cache, { data } ) => {
+                            // cache.writeQuery()
+                            localStorage.setItem('token', data.login.token)
                             this.setState({ visible: false });
                         }
                     });
@@ -95,7 +94,7 @@ export default class AuthPage extends React.Component
                                 />))}
                         </Mutation>)}
                 </Mutation>
-            </div>
+        </div>
         );
     }
 }
