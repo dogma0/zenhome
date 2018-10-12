@@ -9,7 +9,7 @@ import { App } from './components/App'
 import './index.css'
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000/graphql',
+  uri: 'http://localhost:4000/',
 });
 
 const authLink = setContext((_, { headers }) => {
