@@ -1,21 +1,21 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+    entry: "./src/index.tsx",
+    output: {
+        filename: "bundle.js",
+        path: __dirname + "/dist"
+    },
+    devtool: "source-map",
+    resolve: {
+        // Add '.ts' and '.tsx' as resolvable extensions.
+        extensions: [".ts", ".tsx", ".js"]
+    },
     module: {
         rules: [
+            { test: /\.tsx?$/, loader: "ts-loader", },
             {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: ['@babel/preset-react', '@babel/preset-env'],
-                        plugins: ["@babel/plugin-proposal-class-properties"]
-                    }
-                }
-            },
-            {
-                test:/\.css$/,
+                test: /\.css$/,
                 use: ['style-loader', 'css-loader']
             }
 

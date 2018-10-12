@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import styled from 'styled-components'
 import AuthPage from './AuthPage'
 
@@ -12,7 +12,8 @@ export default class Header extends React.Component {
             <Div>
                 <h2> Onion Home 🚀</h2>
                 <AuthPage
-                    toggleBtnText='Signin'
+                    toggleBtnText='Login'
+                    toggleBtnType='default'
                 />
             </Div>
         )

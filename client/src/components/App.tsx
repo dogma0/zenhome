@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import Landing from './Landing'
 import Header from './Header' 
 
 
-class App extends Component {
+class App extends React.Component {
     render() {
         return (
             <div>
