@@ -1,5 +1,4 @@
 import * as React from 'react'
-import ReactDOM from 'react-dom'
 import { Button, Tabs } from 'antd';
 import AuthForm from './AuthForm'
 import gql from 'graphql-tag'
@@ -13,7 +12,6 @@ const SIGNUP_MUTATION = gql`
     }
   }
 `
-
 const LOGIN_MUTATION = gql`
   mutation LoginMutation($email: String!, $password: String!) {
     login(email: $email, password: $password) {
@@ -22,7 +20,7 @@ const LOGIN_MUTATION = gql`
   }
 `
 
-export default class AuthPage extends React.Component
+export default class extends React.Component
     <{ toggleBtnType: ButtonType, toggleBtnText: String },
     { visible: Boolean, confirmLoading: Boolean }> {
 
