@@ -53,7 +53,8 @@ export default class extends React.Component
                         variables: values,
                         update: (cache, { data } ) => {
                             // cache.writeQuery()
-                            localStorage.setItem('token', data.login.token)
+                            data.login && localStorage.setItem('token', data.login.token)
+                            data.signup && localStorage.setItem('token', data.signup.token)
                             this.setState({ visible: false });
                         }
                     });

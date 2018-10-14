@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Row, Col } from 'antd';
-import AuthPage from './AuthPage'
+import AuthModal from './AuthModal'
 
 function UserJounry() {
   return (<ul>
@@ -51,12 +51,12 @@ export default class Landing extends React.Component {
           type='flex'
         >
           <Col span={12}>
-            <AuthPage
+            <AuthModal
             toggleBtnText='Book a Home Tour' 
             toggleBtnType='primary'/>
           </Col>
           <Col span={12}>
-            <AuthPage
+            <AuthModal
             toggleBtnText='Make an Offer'
             toggleBtnType='default'/>
           </Col>
