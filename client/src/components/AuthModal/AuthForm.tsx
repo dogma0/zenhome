@@ -1,10 +1,12 @@
 import * as React from 'react'
+import { Redirect }  from 'react-router-dom'
+
 import { Form, Modal, Tabs, Icon } from 'antd';
-import LoadingStatus from './LoadingStatus'
 import SignupForm from './SignupForm'
 import LoginForm from './LoginForm'
-import ErrorCard from './ErrorCard'
-import { Redirect }  from 'react-router-dom'
+
+import {ErrorCard, LoadingStatus} from '../Misc'
+
 
 interface IAuthForm {
     visible: boolean,
@@ -55,6 +57,7 @@ class AuthForm extends React.Component<IAuthForm> {
                 onCancel={onCancel}
                 onOk={onAuth(authAbstracted)}
                 confirmLoading={confirmLoading}
+                destroyOnClose={true}
             >
                 <Tabs
                     defaultActiveKey="1"
