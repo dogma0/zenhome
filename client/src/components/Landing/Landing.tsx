@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Row, Col } from 'antd';
-import AuthModal from './AuthModal'
+import AuthModal from '../AuthModal'
 
 function UserJounry() {
   return (<ul>
