@@ -1,7 +1,6 @@
 import { verify } from 'jsonwebtoken'
-import { APP_SECRET_PW } from './constants'
 
-export const APP_SECRET = APP_SECRET_PW
+export const APP_SECRET = 'appsecret321'
 
 class AuthError extends Error {
   constructor() {

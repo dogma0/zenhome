@@ -1,12 +1,8 @@
 import { hash, compare } from 'bcrypt'
 import { sign } from 'jsonwebtoken'
-import { MutationResolvers } from './resolvers'
-import { APP_SECRET } from '../utils'
-import { TypeMap } from './types/TypeMap'
+import { APP_SECRET, getUserId } from '../utils'
 
-export interface MutationParent {}
-
-export const Mutation: MutationResolvers.Type<TypeMap> = {
+export const Mutation = {
   signup: async (_parent, { password, name, email }, ctx) => {
     const hashedPassword = await hash(password, 10)
     const user = await ctx.db.createUser({
