@@ -1,6 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import AuthModal from './AuthModal'
+import AuthModal from '../AuthModal'
 
 const Div = styled.div`
   border: 5px outset pink;

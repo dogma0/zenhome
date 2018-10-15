@@ -5,8 +5,9 @@ import { ApolloProvider } from "react-apollo";
 import { createHttpLink } from 'apollo-link-http';
 import { setContext } from 'apollo-link-context';
 import { InMemoryCache } from 'apollo-cache-inmemory';
-import { App } from './components/App'
 import { BrowserRouter } from 'react-router-dom'
+
+import App from './components/App'
 import './index.css'
 
 const httpLink = createHttpLink({

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Button, Tabs } from 'antd';
+import { Button } from 'antd';
 import AuthForm from './AuthForm'
 import gql from 'graphql-tag'
 import { Mutation } from 'react-apollo'
