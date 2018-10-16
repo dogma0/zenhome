@@ -1,7 +1,6 @@
 import { hash, compare } from 'bcrypt'
 import { sign } from 'jsonwebtoken'
 import { APP_SECRET, getUserId } from '../utils'
-import * as assert from 'assert'
 
 export const Mutation = {
   signup: async (_, { password, name, email }, ctx) => {
@@ -34,7 +33,7 @@ export const Mutation = {
       user,
     }
   },
-  createOffer: async (_, {}, ctx ) => {
+  createOffer: async (_, { }, ctx) => {
     const id = getUserId(ctx)
     const offer = await ctx.db.createOffer({
       user: {
@@ -45,20 +44,22 @@ export const Mutation = {
     })
     return offer
   },
-  deleteOffer: async(_, { id }, ctx) => {
+  deleteOffer: async (_, { id }, ctx) => {
     const userId = getUserId(ctx)
-    await ctx.db.user({ id: userId }).offers({
+    const sameOfferFromUser = await ctx.db.user({ id: userId }).offers({
       where: {
         id: id
       }
     })
-
-    return await ctx.db.deleteOffer({
-      id: id
-    })
-    
+    if (sameOfferFromUser.length === 0) {
+      throw new Error('User is not authorized to delete this offer.')
+    } else {
+      return await ctx.db.deleteOffer({
+        id: id
+      })
+    }
   },
-  createTouring: async (_, {}, ctx ) => {
+  createTouring: async (_, { }, ctx) => {
     const id = getUserId(ctx)
     const touring = await ctx.db.createTouring({
       user: {
