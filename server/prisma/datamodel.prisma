@@ -2,7 +2,42 @@ type User {
   id: ID! @unique
   name: String!
   email: String! @unique
+  offers: [Offer!]! @relation(name: "OfferByUser")
   password: String!
   createdAt: DateTime!
   updatedAt: DateTime!
+}
+
+type Offer {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  user: User! @relation(name: "OfferByUser")
+  status: OFFER_STATUS! @default(value: "IN_DRAFT")
+}
+
+type Touring {
+  id: ID! @unique
+  user: User! @relation(name: "TouringByUser")
+  status: TOURING_STATUS! @default(value: "IN_DRAFT")
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+enum OFFER_STATUS {
+  IN_DRAFT
+  PENDING_REVIEW
+  REVIEWED
+  SUBMITTED
+  ACCEPTED
+  REJECTED
+  CANCELED
+}
+
+enum TOURING_STATUS {
+  IN_DRAFT
+  PENDING_SELLER_CONFIRMATION
+  CONFIMED_BY_SELLER
+  REJECTED_BY_SELLER
+  CANCELED
 }

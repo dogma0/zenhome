@@ -1,14 +1,15 @@
 import * as React from 'react';
 import Landing from '../Landing'
 import Header from '../Heading'
+import { Route, Link, Switch} from 'react-router-dom'
+import { Switch as AntSwitch} from 'antd';
 
-// const ME_QUERY = gql`
 class App extends React.Component {
     render() {
         return (
             <div>
                 <Header />
-                {/* <Route exact path="/" render={() => {
+                <Switch>
                     <Route exact path="/" render={()=> <Landing/>}/>
                     <Route exact path="/app" render={()=> <p>APP PAGE</p>}/>
                 </Switch>

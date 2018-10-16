@@ -1,12 +1,19 @@
+# import * from './generated/prisma-graphql/prisma.graphql'
+
 scalar DateTime
 
 type Query {
   me: User
+  offers: [Offer!]!
+  tourings: [Touring!]!
 }
 
 type Mutation {
   signup(name: String!, email: String!, password: String!): AuthPayload!
   login(email: String!, password: String!): AuthPayload!
+  createOffer: Offer!
+  deleteOffer(id: ID!): Offer!
+  createTouring: Touring!
 }
 
 type AuthPayload {
