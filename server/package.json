@@ -8,7 +8,11 @@
   "license": "Apache 2",
   "scripts": {
     "start": "cd src && ts-node index.ts",
-    "migrate": "cd prisma && prisma deploy"
+    "migrate": "cd prisma && prisma deploy",
+    "test": "jest",
+    "test_reset_seed": "yarn test_reset && yarn test_seed",
+    "test_reset": "cd __tests__/test_fixtures/ && prisma reset -f",
+    "test_seed": "ts-node __tests__/seed.ts"
   },
   "dependencies": {
     "@types/jsonwebtoken": "^7.2.8",
@@ -21,6 +25,9 @@
   },
   "devDependencies": {
     "@types/bcrypt": "3.0.0",
+    "@types/jest": "^23.3.5",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
     "ts-node": "7.0.1",
     "typescript": "3.1.3"
   }
