@@ -8,11 +8,15 @@
   "license": "Apache 2",
   "scripts": {
     "start": "cd src && ts-node index.ts",
-    "migrate": "cd prisma && prisma deploy",
     "test": "jest",
-    "test_reset_seed": "yarn test_reset && yarn test_seed",
-    "test_reset": "cd __tests__/test_fixtures/ && prisma reset -f",
-    "test_seed": "ts-node __tests__/seed.ts"
+    "migrate": "cd prisma && prisma deploy",
+    "reset-seed": "yarn reset && yarn seed",
+    "reset": "cd prisma && prisma reset -f",
+    "seed": "ts-node __tests__/seed.ts 4466",
+    "test-migrate": "cd __tests__/test_fixtures && prisma deploy", 
+    "test-reset-seed": "yarn test-reset && yarn test-seed",
+    "test-reset": "cd __tests__/test_fixtures/ && prisma reset -f",
+    "test-seed": "ts-node __tests__/seed.ts 5000"
   },
   "dependencies": {
     "@types/jsonwebtoken": "^7.2.8",

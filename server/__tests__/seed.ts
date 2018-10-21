@@ -1,12 +1,10 @@
-import { Prisma, ClientConstructor } from '../src/generated/prisma-client'
-import { typeDefs } from '../src/generated/prisma-client/prisma-schema'
-import { makePrismaClientClass } from 'prisma-client-lib';
+import { Prisma } from '../src/generated/prisma-client'
 
-const port = 5000
+const port = process.argv[2]
 
 const db = new Prisma({
     endpoint: `http://localhost:${port}`,
-    secret: "mysecret45wrong"
+    // secret: "mysecret45wrong"
 })
 
 const seedConfig = {
@@ -34,14 +32,14 @@ const seed = async () => {
         password: `user${i}`
     }), seedConfig.numUser)
     await seedGeneric((i) => db.createOffer({
-        user: {
+        creator: {
             connect: {
                 email: `user${Math.floor(Math.random() * Math.floor(seedConfig.numUser) + 1)}@email.com`
             }
         }
     }), seedConfig.numOffer)
     await seedGeneric((i) => db.createTouring({
-        user: {
+        creator: {
             connect: {
                 email: `user${Math.floor(Math.random() * Math.floor(seedConfig.numUser) + 1)}@email.com`
             }
@@ -51,5 +49,3 @@ const seed = async () => {
 
 seed()
 console.log("Sync code finished")
-
-
