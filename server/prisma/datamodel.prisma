@@ -2,7 +2,8 @@ type User {
   id: ID! @unique
   name: String!
   email: String! @unique
-  offers: [Offer!]! @relation(name: "OfferByUser")
+  offers: [Offer!]!
+  tourings: [Touring!]!
   password: String!
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -12,13 +13,13 @@ type Offer {
   id: ID! @unique
   createdAt: DateTime!
   updatedAt: DateTime!
-  user: User! @relation(name: "OfferByUser")
+  creator: User!
   status: OFFER_STATUS! @default(value: "IN_DRAFT")
 }
 
 type Touring {
   id: ID! @unique
-  user: User! @relation(name: "TouringByUser")
+  creator: User!
   status: TOURING_STATUS! @default(value: "IN_DRAFT")
   createdAt: DateTime!
   updatedAt: DateTime!

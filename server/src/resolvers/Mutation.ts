@@ -34,15 +34,13 @@ export const Mutation = {
     }
   },
   createOffer: async (_, { }, ctx) => {
-    const id = getUserId(ctx)
-    const offer = await ctx.db.createOffer({
+    return  await ctx.db.createOffer({
       user: {
         connect: {
-          id: id
+          id: getUserId(ctx)
         }
       }
     })
-    return offer
   },
   deleteOffer: async (_, { id }, ctx) => {
     const userId = getUserId(ctx)
@@ -51,23 +49,19 @@ export const Mutation = {
         id: id
       }
     })
-    if (sameOfferFromUser.length === 0) {
-      throw new Error('User is not authorized to delete this offer.')
-    } else {
-      return await ctx.db.deleteOffer({
-        id: id
-      })
-    }
+    if (sameOfferFromUser.length === 0) throw new Error('User is not authorized to delete this offer.')
+    return await ctx.db.deleteOffer({
+      id: id
+    })
+    
   },
   createTouring: async (_, { }, ctx) => {
-    const id = getUserId(ctx)
-    const touring = await ctx.db.createTouring({
+    return await ctx.db.createTouring({
       user: {
         connect: {
-          id: id
+          id: getUserId(ctx)
         }
       }
     })
-    return touring
   }
 }
