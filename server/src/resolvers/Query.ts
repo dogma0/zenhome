@@ -1,5 +1,4 @@
 import { getUserId } from '../utils'
-import { text } from 'body-parser';
 
 export const Query = {
   me: (_parent, _args, ctx) => {

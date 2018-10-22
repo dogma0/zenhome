@@ -5,7 +5,6 @@ const port = process.argv[2]
 
 const db = new Prisma({
     endpoint: `http://localhost:${port}`,
-    // secret: "mysecret45wrong"
 })
 
 const seedConfig = {
