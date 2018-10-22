@@ -1,15 +1,10 @@
 import { getUserId } from '../utils'
+import { text } from 'body-parser';
 
 export const Query = {
   me: (_parent, _args, ctx) => {
     return ctx.db.user({ id: getUserId(ctx) })
   },
-  offers: (_parent, _args, ctx) => {
-    return ctx.db.user(
-      { id: getUserId(ctx) }).offers()
-  },
-  tourings: (_parent, _args, ctx) => {
-    return ctx.db.user(
-      { id: getUserId(ctx) }).tourings()
-  },
+  testAllOffers: (_, __, ctx) => ctx.db.offers(),
+  testAllTourings: (_, __, ctx) => ctx.db.tourings()
 }

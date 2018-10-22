@@ -1,6 +1,12 @@
+import { getUserId } from '../utils'
+
 export const User = {
-  id: parent => parent.id,
-  email: parent => parent.email,
-  name: parent => parent.name,
-  createdAt: parent => parent.createdAt,
+  offers: (_parent, _args, ctx) => {
+    return ctx.db.user(
+      { id: getUserId(ctx) }).offers()
+  },
+  tourings: (_parent, _args, ctx) => {
+    return ctx.db.user(
+      { id: getUserId(ctx) }).tourings()
+  },
 }
