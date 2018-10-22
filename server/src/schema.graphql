@@ -4,8 +4,8 @@ scalar DateTime
 
 type Query {
   me: User
-  offers: [Offer!]!
-  tourings: [Touring!]!
+  testAllOffers: [Offer!]!
+  testAllTourings: [Touring!]!
 }
 
 type Mutation {
@@ -26,4 +26,6 @@ type User {
   email: String!
   name: String!
   createdAt: DateTime!
+  offers: [Offer!]!
+  tourings: [Touring!]!
 }

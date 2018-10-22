@@ -1,4 +1,5 @@
 import { Prisma } from '../src/generated/prisma-client'
+import { hashSync } from 'bcrypt'
 
 const port = process.argv[2]
 
@@ -29,7 +30,7 @@ const seed = async () => {
     await seedGeneric((i) => db.createUser({
         name: `user${i}`,
         email: `user${i}@email.com`,
-        password: `user${i}`
+        password: hashSync(`user${i}`, 10)
     }), seedConfig.numUser)
     await seedGeneric((i) => db.createOffer({
         creator: {

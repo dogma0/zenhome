@@ -2,7 +2,7 @@ import { verify } from 'jsonwebtoken'
 
 export const APP_SECRET = 'appsecret321'
 
-class AuthError extends Error {
+export class AuthError extends Error {
   constructor() {
     super('Not authorized')
   }
