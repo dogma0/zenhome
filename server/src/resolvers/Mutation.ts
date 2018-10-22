@@ -1,6 +1,6 @@
 import { hash, compare } from 'bcrypt'
 import { sign } from 'jsonwebtoken'
-import { APP_SECRET, getUserId } from '../utils'
+import { APP_SECRET, getUserId, AuthError } from '../utils'
 
 export const Mutation = {
   signup: async (_, { password, name, email }, ctx) => {
@@ -34,7 +34,7 @@ export const Mutation = {
     }
   },
   createOffer: async (_, { }, ctx) => {
-    return  await ctx.db.createOffer({
+    return await ctx.db.createOffer({
       user: {
         connect: {
           id: getUserId(ctx)
@@ -43,17 +43,13 @@ export const Mutation = {
     })
   },
   deleteOffer: async (_, { id }, ctx) => {
-    const userId = getUserId(ctx)
-    const sameOfferFromUser = await ctx.db.user({ id: userId }).offers({
-      where: {
-        id: id
-      }
-    })
-    if (sameOfferFromUser.length === 0) throw new Error('User is not authorized to delete this offer.')
+    if (!await ctx.db.$exists.offer({
+      id: id,
+      creator: { id: getUserId(ctx) }
+    })) throw new AuthError
     return await ctx.db.deleteOffer({
       id: id
     })
-    
   },
   createTouring: async (_, { }, ctx) => {
     return await ctx.db.createTouring({
@@ -63,5 +59,14 @@ export const Mutation = {
         }
       }
     })
-  }
+  },
+  deleteTouring: async (_, { id }, ctx) => {
+    if (!await ctx.db.$exists.touring({
+      id: id,
+      creator: { id: getUserId(ctx) }
+    })) throw new AuthError
+    return await ctx.db.deleteTouring({
+      id: id
+    })
+  },
 }
