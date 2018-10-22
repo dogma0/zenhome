@@ -1,5 +1,3 @@
-# import * from './generated/prisma-graphql/prisma.graphql'
-
 scalar DateTime
 
 type Query {
@@ -29,4 +27,36 @@ type User {
   createdAt: DateTime!
   offers: [Offer!]!
   tourings: [Touring!]!
+}
+
+type Offer {
+  id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  status: OFFER_STATUS!
+}
+
+type Touring {
+  id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  status: OFFER_STATUS!
+}
+
+enum OFFER_STATUS {
+  IN_DRAFT
+  PENDING_REVIEW
+  REVIEWED
+  SUBMITTED
+  ACCEPTED
+  REJECTED
+  CANCELED
+}
+
+enum TOURING_STATUS {
+  IN_DRAFT
+  PENDING_SELLER_CONFIRMATION
+  CONFIMED_BY_SELLER
+  REJECTED_BY_SELLER
+  CANCELED
 }
