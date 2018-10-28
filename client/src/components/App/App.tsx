@@ -8,13 +8,14 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Header />
+                {/* <Header/>
                 <Switch>
                     <Route exact path="/" render={()=> <Landing/>}/>
                     <Route exact path="/app" render={()=> <p>APP PAGE</p>}/>
                 </Switch>
                 <Link to="/app">go to app</Link>
-                <Link to="/">go home</Link>
+                <Link to="/">go home</Link> */}
+                <Landing/>
             </div>)
     }
 }
