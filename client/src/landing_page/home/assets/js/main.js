@@ -183,7 +183,7 @@ $(document).ready(function ($) {
 
     $("#saving-cal-input").on("input", function() {
         const val = Number($("#saving-cal-input").val());
-        $("#saving-cal-res").text(`A home of $${val.toLocaleString('en')} means you save $${Math.max(Math.round(val*0.025 - 3000)*1.13, 0).toLocaleString('en')}`)
+        $("#saving-cal-res").text(`Purchase Price: $${val.toLocaleString('en')}, You Could Save: $${Math.max(Math.round((val*0.025*.5)*1.13), 0).toLocaleString('en')}`)
     })
 
 });

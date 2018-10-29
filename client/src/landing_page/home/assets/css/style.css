@@ -22,13 +22,20 @@ Table of content
 12.Single post 
 
  
-/*----------------------------------------
-General Styles
-----------------------------------------*/
-
+/*---
+Custom styles
+---*/
 .padd-80-top {
     padding-top: 80px
 }
+.padd-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*----------------------------------------
+General Styles
+----------------------------------------*/
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -507,7 +514,15 @@ Hero
 }
 
 .hero-text h3 {
-    font-size: 40px;
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 60px;
+    font-weight: 200;
+}
+
+.hero-text h4 {
+    font-size: 27.5px;
     color: #fff;
     margin-bottom: 20px;
     line-height: 60px;
@@ -529,6 +544,13 @@ About
 
 .title-h2 {
     font-size: 38px;
+    color: #4B456F;
+    line-height: 46px;
+    font-weight: 300;
+}
+
+.title-h3 {
+    font-size: 30px;
     color: #4B456F;
     line-height: 46px;
     font-weight: 300;
