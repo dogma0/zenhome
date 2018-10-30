@@ -21,13 +21,13 @@ const LOGIN_MUTATION = gql`
 `
 
 export default class extends React.Component
-    <{ toggleBtnType: ButtonType, toggleBtnText: String },
-    { visible: Boolean, confirmLoading: Boolean }> {
+    <{ visible: boolean, toggleBtnType: ButtonType, toggleBtnText: String },
+    { visible: boolean, confirmLoading: boolean }> {
 
     private formRef: any
 
     state = {
-        visible: false, 
+        visible: this.props.visible,
         confirmLoading: false,
     }
 

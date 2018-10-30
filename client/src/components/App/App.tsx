@@ -1,22 +1,32 @@
 import * as React from 'react';
-import Landing from '../Landing'
-import Header from '../Heading'
-import { Route, Link, Switch} from 'react-router-dom'
-import { Switch as AntSwitch} from 'antd';
+import AuthModal from '../AuthModal'
+import styled from 'styled-components'
+
+const sofa = require('./assets/sofa.jpg');
+
+const Bg = styled.html`
+    background: url(${sofa}) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+    height: 850px;
+    text-align: center;
+    line-height: 850px;
+    white-space: no-wrap;
+}
+`
 
 class App extends React.Component {
     render() {
         return (
-            <div>
-                {/* <Header/>
-                <Switch>
-                    <Route exact path="/" render={()=> <Landing/>}/>
-                    <Route exact path="/app" render={()=> <p>APP PAGE</p>}/>
-                </Switch>
-                <Link to="/app">go to app</Link>
-                <Link to="/">go home</Link> */}
-                <Landing/>
-            </div>)
+            <Bg>
+                <AuthModal
+                    visible={true}
+                    toggleBtnText='Login'
+                    toggleBtnType='primary'
+                ></AuthModal>
+            </Bg>)
     }
 }
 
