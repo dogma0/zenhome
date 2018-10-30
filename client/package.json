@@ -5,7 +5,7 @@
   "repository": "git@github.com:frankc201106/onion-home.git",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
+    "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
   "devDependencies": {
