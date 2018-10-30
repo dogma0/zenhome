@@ -1,0 +1,1404 @@
+[
+    {
+        "Id": "19965477",
+        "MlsNumber": "N4262006",
+        "PublicRemarks": "Best Location In High Demand Doncrest Area* Minutes Walk To All Urban Amenities & Trans.Hubs* Go Train, Viva, Loblaw, Walmart, Goodlife, Shops, Restaurants, Parks, Medical Centre & High Ranked Schools* Bright & Spacious* Generously Over $350K Spent In Elegant Professionally Tip To Toe Done Renovated Recently* W\/O Bsmt W\/ Sep Ent & All Grnt Cnrttops* Newer Windows & Roof* Piece Of Art Bthrms*Smooth Ceilings W\/Potlight\/Skylight\/Crnmldg**** EXTRAS **** Main Kitchen S\/S Bosch Appliances, 3 Fridges, 1 Stove, 1 Range, 1 Cooktop, 1 Exhst Fan, 2 Microwaves, 2 Dishwashers, 2 Washers, 2 Dryers, Cvac, Elfs, Window Covering, Newer Furnace & Humidifier & Cac, Gdo & 2 Remotes.",
+        "Building": {
+            "BathroomTotal": "6",
+            "Bedrooms": "5 + 2",
+            "StoriesTotal": "2",
+            "Type": "House"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1486478,
+                "Name": "MOHSEN KOOCHEK",
+                "Organization": {
+                    "OrganizationID": 150284,
+                    "Name": "CENTURY 21 HERITAGE GROUP LTD.",
+                    "Logo": "https:\/\/cdn.realtor.ca\/organizations\/en-CA\/lowres\/150284.jpg",
+                    "Address": {
+                        "AddressText": "11160 YONGE ST # 3 & 7|RICHMOND HILL, ON L4S1H5"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "883-8300",
+                            "AreaCode": "905",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "883-8301",
+                            "AreaCode": "905",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Websites": [
+                        {
+                            "Website": "http:\/\/www.homesbyheritage.ca",
+                            "WebsiteTypeId": "1"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/150284\/century-21-heritage-group-ltd-11160-yonge-st-3-7-richmond-hill-on-l4s1h5"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "883-8300",
+                        "AreaCode": "905",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414412195"
+                    }
+                ],
+                "Photo": "https:\/\/cdn.realtor.ca\/individuals\/lowres\/1486478.jpg",
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "MOHSEN",
+                "LastName": "KOOCHEK",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1486478\/MOHSEN-KOOCHEK-11160-YONGE-ST-3-7-RICHMOND-HILL-ON-L4S1H5"
+            }
+        ],
+        "Property": {
+            "Price": "$1",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "9 HYDE PARK DR|Richmond Hill, Ontario L4B1V3",
+                "Longitude": "-79.3940802",
+                "Latitude": "43.8464752"
+            },
+            "Photo": [
+                {
+                    "SequenceId": "1",
+                    "HighResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636737571143630000\/reb82\/highres\/6\/n4262006_1.jpg",
+                    "MedResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636737571143630000\/reb82\/medres\/6\/n4262006_1.jpg",
+                    "LowResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636737571143630000\/reb82\/lowres\/6\/n4262006_1.jpg",
+                    "LastUpdated": "2018-09-28 6:45:14 PM"
+                }
+            ],
+            "Parking": [
+                {
+                    "Name": "Garage"
+                }
+            ],
+            "ParkingSpaceTotal": "7",
+            "TypeId": "300",
+            "OwnershipType": "Freehold",
+            "AmmenitiesNearBy": "Hospital, Park, Public Transit, Schools"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "50.43 x 126.06 FT"
+        },
+        "AlternateURL": {
+            "DetailsLink": "http:\/\/www.9hydepark.com\/",
+            "VideoLink": "http:\/\/www.9hydepark.com\/unbranded\/"
+        },
+        "PostalCode": "L4B1V3",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/19965477\/9-HYDE-PARK-DR-Richmond-Hill-Ontario-L4B1V3-Doncrest",
+        "StatusId": "1",
+        "PhotoChangeDateUTC": "2018-09-28 10:45:14 PM"
+    },
+    {
+        "Id": "20016143",
+        "MlsNumber": "N4275361",
+        "PublicRemarks": "Why Rent When You Can Buy This **Absolutely Beautiful.! Large Size 3 Bdr+2 Wm Corner Unit Condo Apartment In A High Demand Markham Location.** North View With Lots Of Natural Light, Over Sized Balcony, Laundry En Suite Storage, Locker And S\/S Appliances. Open Concept Layout. Steps To Best Schools In Markham, Walk To All Shops, Transit, Restaurants, 407\/Steeles. Close To Mosque, Church, Temple & Much More!**** EXTRAS **** All Elf's, S\/S Fridge, S\/S Stove,Dishwasher, Washer-Dryer, Window Coverings.  One Locker And 6 Parking Spots",
+        "Building": {
+            "BathroomTotal": "2",
+            "Bedrooms": "3",
+            "Type": "Apartment",
+            "Ammenities": "Storage - Locker, Party Room"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1963026,
+                "Name": "SHAZIA KHAN",
+                "Organization": {
+                    "OrganizationID": 50862,
+                    "Name": "RE\/MAX REALTRON REALTY INC.",
+                    "Logo": "https:\/\/cdn.realtor.ca\/organizations\/en-CA\/lowres\/1003000.jpg",
+                    "Address": {
+                        "AddressText": "885 PROGRESS AVENUE, STE. 209|TORONTO, ON M1H3G3"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "289-3333",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "289-4535",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/50862\/remax-realtron-realty-inc-885-progress-avenue-ste-209-toronto-on-m1h3g3"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "960-8595",
+                        "AreaCode": "647",
+                        "PhoneTypeId": "1"
+                    },
+                    {
+                        "PhoneType": "Toll Free",
+                        "PhoneNumber": "960-8595",
+                        "AreaCode": "647",
+                        "PhoneTypeId": "5"
+                    }
+                ],
+                "Websites": [
+                    {
+                        "Website": "http:\/\/www.homesbuzz.ca",
+                        "WebsiteTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "415144681"
+                    }
+                ],
+                "Photo": "https:\/\/cdn.realtor.ca\/individuals\/lowres\/1963026.jpg",
+                "Position": "Broker",
+                "PermitFreetextEmail": true,
+                "FirstName": "SHAZIA",
+                "LastName": "KHAN",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1963026\/SHAZIA-KHAN-885-PROGRESS-AVENUE-STE-209-TORONTO-ON-M1H3G3"
+            },
+            {
+                "IndividualID": 1957772,
+                "Name": "KAMALI SHANMUGALINGAM",
+                "Organization": {
+                    "OrganizationID": 50862,
+                    "Name": "RE\/MAX REALTRON REALTY INC.",
+                    "Logo": "https:\/\/cdn.realtor.ca\/organizations\/en-CA\/lowres\/1003000.jpg",
+                    "Address": {
+                        "AddressText": "885 PROGRESS AVENUE, STE. 209|TORONTO, ON M1H3G3"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "289-3333",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "289-4535",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/50862\/remax-realtron-realty-inc-885-progress-avenue-ste-209-toronto-on-m1h3g3"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "289-3333",
+                        "AreaCode": "416",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414489089"
+                    }
+                ],
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "KAMALI",
+                "LastName": "SHANMUGALINGAM",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1957772\/KAMALI-SHANMUGALINGAM-885-PROGRESS-AVENUE-STE-209-TORONTO-ON-M1H3G3"
+            }
+        ],
+        "Property": {
+            "Price": "$1",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "#316 -7428 MARKHAM RD|Markham, Ontario L3S4V6",
+                "Longitude": "-79.2544259",
+                "Latitude": "43.849539"
+            },
+            "Photo": [
+                {
+                    "SequenceId": "1",
+                    "HighResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636749880096100000\/reb82\/highres\/1\/n4275361_1.jpg",
+                    "MedResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636749880096100000\/reb82\/medres\/1\/n4275361_1.jpg",
+                    "LowResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636749880096100000\/reb82\/lowres\/1\/n4275361_1.jpg",
+                    "LastUpdated": "2018-10-13 12:40:09 AM"
+                }
+            ],
+            "Parking": [
+                {
+                    "Name": "Underground"
+                },
+                {
+                    "Name": "Visitor parking"
+                }
+            ],
+            "ParkingSpaceTotal": "6",
+            "TypeId": "300",
+            "OwnershipType": "Condominium\/Strata",
+            "AmmenitiesNearBy": "Park, Public Transit, Schools"
+        },
+        "Business": {},
+        "Land": {},
+        "AlternateURL": {
+            "VideoLink": "http:\/\/just4agent.com\/vtour\/316-7428-markham-rd\/"
+        },
+        "PostalCode": "L3S4V6",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/20016143\/316--7428-MARKHAM-RD-Markham-Ontario-L3S4V6-Middlefield",
+        "StatusId": "1",
+        "PhotoChangeDateUTC": "2018-10-13 4:40:09 AM"
+    },
+    {
+        "Id": "19965526",
+        "MlsNumber": "N4262213",
+        "PublicRemarks": "Immaculate Executive Home In \"\"Bayview Hill\"\" Nestled On Quiet Street With Premium Lot 70.05X150.92 Feet, Elegant 18' Grand Foyer, Newly Painted Throughout. Professionally Landscaped, Interlock Driveway. Steps To Top Ranking Bayview Elemantry School And Close To Bayview Secondary Schoo. Close To All Amenities, And Parks. Large Family Room With Custom Fire Place And Bay Windows. Ready To Move In Or Renovate Your Dream House.**** EXTRAS **** Custom Kitchen With Brand New Built In Stainless Steel Appliances (Never Used) Walk Out To Magnificient Mature Treed & Landscaped Private Backyard. Second Floor Features 4 Large Bedrooms. Finished Basement Includes Media Room, Recreation",
+        "Building": {
+            "BathroomTotal": "3",
+            "Bedrooms": "4 + 1",
+            "StoriesTotal": "2",
+            "Type": "House"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1486478,
+                "Name": "MOHSEN KOOCHEK",
+                "Organization": {
+                    "OrganizationID": 150284,
+                    "Name": "CENTURY 21 HERITAGE GROUP LTD.",
+                    "Logo": "https:\/\/cdn.realtor.ca\/organizations\/en-CA\/lowres\/150284.jpg",
+                    "Address": {
+                        "AddressText": "11160 YONGE ST # 3 & 7|RICHMOND HILL, ON L4S1H5"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "883-8300",
+                            "AreaCode": "905",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "883-8301",
+                            "AreaCode": "905",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Websites": [
+                        {
+                            "Website": "http:\/\/www.homesbyheritage.ca",
+                            "WebsiteTypeId": "1"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/150284\/century-21-heritage-group-ltd-11160-yonge-st-3-7-richmond-hill-on-l4s1h5"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "883-8300",
+                        "AreaCode": "905",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414412195"
+                    }
+                ],
+                "Photo": "https:\/\/cdn.realtor.ca\/individuals\/lowres\/1486478.jpg",
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "MOHSEN",
+                "LastName": "KOOCHEK",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1486478\/MOHSEN-KOOCHEK-11160-YONGE-ST-3-7-RICHMOND-HILL-ON-L4S1H5"
+            }
+        ],
+        "Property": {
+            "Price": "$1",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "5 GLENAYR RD|Richmond Hill, Ontario L4S1H5",
+                "Longitude": "-79.4059842",
+                "Latitude": "43.8634381"
+            },
+            "Photo": [
+                {
+                    "SequenceId": "1",
+                    "HighResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636737571185970000\/reb82\/highres\/3\/n4262213_1.jpg",
+                    "MedResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636737571185970000\/reb82\/medres\/3\/n4262213_1.jpg",
+                    "LowResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636737571185970000\/reb82\/lowres\/3\/n4262213_1.jpg",
+                    "LastUpdated": "2018-09-28 6:45:18 PM"
+                }
+            ],
+            "Parking": [
+                {
+                    "Name": "Attached garage"
+                }
+            ],
+            "ParkingSpaceTotal": "7",
+            "TypeId": "300",
+            "OwnershipType": "Freehold",
+            "AmmenitiesNearBy": "Hospital, Park, Public Transit, Schools"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "70.05 x 150.92 FT"
+        },
+        "PostalCode": "L4S1H5",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/19965526\/5-GLENAYR-RD-Richmond-Hill-Ontario-L4S1H5-Bayview-Hill",
+        "StatusId": "1",
+        "PhotoChangeDateUTC": "2018-09-28 10:45:18 PM"
+    },
+    {
+        "Id": "19352584",
+        "MlsNumber": "W4110078",
+        "PublicRemarks": "Under Construction, One Of Its Kind. Main Floor One Bedroom And Full Washroom, Mud Room, 2nd Fl Library And Patio Above The 4 Car Garage. 1000 Sf Workshop W\/Heat. Walking Distance To School. 45 Min To Toronto, 10 Min To \"\"Go Train\"\".",
+        "Building": {
+            "BathroomTotal": "5",
+            "Bedrooms": "4",
+            "StoriesTotal": "2.5",
+            "Type": "House"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1928586,
+                "Name": "JASPAL SINGH KANDOLA",
+                "Organization": {
+                    "OrganizationID": 146431,
+                    "Name": "HOMELIFE\/MIRACLE REALTY LTD",
+                    "Logo": "https:\/\/cdn.realtor.ca\/organizations\/en-CA\/lowres\/146431.jpg",
+                    "Address": {
+                        "AddressText": "20-470 CHRYSLER DRIVE|BRAMPTON, ON L6S0C1"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "454-4000",
+                            "AreaCode": "905",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "463-0811",
+                            "AreaCode": "905",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/146431\/homelifemiracle-realty-ltd-20-470-chrysler-drive-brampton-on-l6s0c1"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "454-4000",
+                        "AreaCode": "905",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414471650"
+                    }
+                ],
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "JASPAL SINGH",
+                "LastName": "KANDOLA",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1928586\/JASPAL-SINGH-KANDOLA-20-470-CHRYSLER-DRIVE-BRAMPTON-ON-L6S0C1"
+            }
+        ],
+        "Property": {
+            "Price": "$1",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "|",
+                "Longitude": "-79.9794535",
+                "Latitude": "43.6361781"
+            },
+            "Photo": [
+                {
+                    "SequenceId": "1",
+                    "HighResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636605053933270000\/reb82\/highres\/8\/w4110078_1.jpg",
+                    "MedResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636605053933270000\/reb82\/medres\/8\/w4110078_1.jpg",
+                    "LowResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636605053933270000\/reb82\/lowres\/8\/w4110078_1.jpg",
+                    "LastUpdated": "2018-04-28 9:43:13 AM"
+                }
+            ],
+            "Parking": [
+                {
+                    "Name": "Attached garage"
+                }
+            ],
+            "ParkingSpaceTotal": "15",
+            "TypeId": "300",
+            "AmmenitiesNearBy": "Park, Schools"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "150 x 163.94 FT   ; One Acre Lot|1\/2 - 1.99 acres"
+        },
+        "PostalCode": "L0P1H0",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/19352584\/Halton-Hills",
+        "StatusId": "1",
+        "PriceChangeDateUTC": "2018-08-15 1:40:45 PM",
+        "PhotoChangeDateUTC": "2018-04-28 1:43:13 PM"
+    },
+    {
+        "Id": "20027872",
+        "MlsNumber": "C4278054",
+        "PublicRemarks": "Prime Bathurst Manor Location! Fully Renovated Open Concept Bungalo, Elegance& Luxury Throughout.9' Ceiling In Living Rm, Hardwood & Laminate Floors, Crystal Chandeliers,Finished Bsmt W\/ 2 Bdrms With 3 Pc Washrms In Each Suite! Recreational Rm W\/ Kitchenette-Bar W\/Full Size Fridge, Quartz Countertop & Island.****$1 Value Does Not Reflect The Market Price. The Seller Has The Right To Reject Any Offer On His Own Discretion.**** Schools:Wilmington Es, Charles H.**** EXTRAS **** New Ss Fridge, Stove, Dishwasher, Hood, Washer, Dryer, Gdo,Humidifier, Fridge In Bsmnt, All Elf's, All Window Coverings, Kitchen Cabinets, Mosaic Back Splash, Granit Counters, Entrance Door, Bsmnt Windws, Landscaping, Shed, Oak Stair,Etc",
+        "Building": {
+            "BathroomTotal": "3",
+            "Bedrooms": "3 + 2",
+            "StoriesTotal": "1",
+            "Type": "House"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1413262,
+                "Name": "IRINA AKIMOVA",
+                "Organization": {
+                    "OrganizationID": 68202,
+                    "Name": "RIGHT AT HOME REALTY INC.",
+                    "Logo": "https:\/\/cdn.realtor.ca\/organizations\/en-CA\/lowres\/68202.jpg",
+                    "Address": {
+                        "AddressText": "1396 DON MILLS RD UNIT B-121|TORONTO, ON M3B0A7"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "391-3232",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "391-0319",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Websites": [
+                        {
+                            "Website": "http:\/\/www.rightathomerealty.com",
+                            "WebsiteTypeId": "1"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/68202\/right-at-home-realty-inc-1396-don-mills-rd-unit-b-121-toronto-on-m3b0a7"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "391-3232",
+                        "AreaCode": "416",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414355037"
+                    }
+                ],
+                "Position": "Broker",
+                "PermitFreetextEmail": true,
+                "FirstName": "IRINA",
+                "LastName": "AKIMOVA",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1413262\/IRINA-AKIMOVA-1396-DON-MILLS-RD-UNIT-B-121-TORONTO-ON-M3B0A7"
+            }
+        ],
+        "Property": {
+            "Price": "$1",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "271 BRIGHTON AVE|Toronto, Ontario M3H4G1",
+                "Longitude": "-79.4581179",
+                "Latitude": "43.7571576"
+            },
+            "Photo": [
+                {
+                    "SequenceId": "1",
+                    "HighResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636753796233870000\/reb82\/highres\/4\/c4278054_1.jpg",
+                    "MedResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636753796233870000\/reb82\/medres\/4\/c4278054_1.jpg",
+                    "LowResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636753796233870000\/reb82\/lowres\/4\/c4278054_1.jpg",
+                    "LastUpdated": "2018-10-17 1:27:03 PM"
+                }
+            ],
+            "Parking": [
+                {
+                    "Name": "Attached garage"
+                }
+            ],
+            "ParkingSpaceTotal": "7",
+            "TypeId": "300",
+            "OwnershipType": "Freehold"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "52.54 x 115 FT ; ***** Fully Renovated *****"
+        },
+        "AlternateURL": {
+            "VideoLink": "https:\/\/www.360homephoto.com\/s8754\/"
+        },
+        "PostalCode": "M3H4G1",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/20027872\/271-BRIGHTON-AVE-Toronto-Ontario-M3H4G1-Bathurst-Manor",
+        "StatusId": "1",
+        "PhotoChangeDateUTC": "2018-10-17 5:27:03 PM"
+    },
+    {
+        "Id": "19883817",
+        "MlsNumber": "C4239014",
+        "PublicRemarks": "Crystal Blu Condominium Across From Holt Renfrew & Manulife Centre, Locker  P6 #22 For Sale. Legal Description: Level 6, Unit  22. Price $250.00 Plus Hst.  Locker Maintenance Approx. $39.70\/Month",
+        "Building": {
+            "BathroomTotal": "0",
+            "Type": "Other",
+            "Ammenities": "Storage - Locker"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1462662,
+                "Name": "KRISTA L JACKSON",
+                "Organization": {
+                    "OrganizationID": 177335,
+                    "Name": "BAKER REAL ESTATE INCORPORATED",
+                    "Address": {
+                        "AddressText": "3080 YONGE ST #3056|TORONTO, ON M4N3N1"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "923-4621",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "924-5321",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Emails": [
+                        {
+                            "ContactId": "414348940"
+                        }
+                    ],
+                    "Websites": [
+                        {
+                            "Website": "http:\/\/www.baker-re.com",
+                            "WebsiteTypeId": "1"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "HasEmail": true,
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/177335\/baker-real-estate-incorporated-3080-yonge-st-3056-toronto-on-m4n3n1"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "923-4621",
+                        "AreaCode": "416",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414380694"
+                    }
+                ],
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "KRISTA L",
+                "LastName": "JACKSON",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1462662\/KRISTA-L-JACKSON-3080-YONGE-ST-3056-TORONTO-ON-M4N3N1"
+            }
+        ],
+        "Property": {
+            "Price": "$250",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "#LOCKER -21 BALMUTO ST|Toronto, Ontario M4Y1W4",
+                "Longitude": "-79.3873723",
+                "Latitude": "43.6691531"
+            },
+            "TypeId": "300",
+            "OwnershipType": "Condominium\/Strata"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "."
+        },
+        "PostalCode": "M4Y1W4",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/19883817\/LOCKER--21-BALMUTO-ST-Toronto-Ontario-M4Y1W4-Bay-Street-Corridor",
+        "StatusId": "1"
+    },
+    {
+        "Id": "19883837",
+        "MlsNumber": "C4239105",
+        "PublicRemarks": "Crystal Blu Condominium Across From Holt Renfrew & Manulife Centre, Locker  P6 #25 For Sale. Legal Description: Level 6, Unit  25. Price $250.00 Plus Hst.  Locker Maintenance Approx. $39.70\/Month",
+        "Building": {
+            "BathroomTotal": "0",
+            "Type": "Other",
+            "Ammenities": "Storage - Locker"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1462662,
+                "Name": "KRISTA L JACKSON",
+                "Organization": {
+                    "OrganizationID": 177335,
+                    "Name": "BAKER REAL ESTATE INCORPORATED",
+                    "Address": {
+                        "AddressText": "3080 YONGE ST #3056|TORONTO, ON M4N3N1"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "923-4621",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "924-5321",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Emails": [
+                        {
+                            "ContactId": "414348940"
+                        }
+                    ],
+                    "Websites": [
+                        {
+                            "Website": "http:\/\/www.baker-re.com",
+                            "WebsiteTypeId": "1"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "HasEmail": true,
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/177335\/baker-real-estate-incorporated-3080-yonge-st-3056-toronto-on-m4n3n1"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "923-4621",
+                        "AreaCode": "416",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414380694"
+                    }
+                ],
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "KRISTA L",
+                "LastName": "JACKSON",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1462662\/KRISTA-L-JACKSON-3080-YONGE-ST-3056-TORONTO-ON-M4N3N1"
+            }
+        ],
+        "Property": {
+            "Price": "$250",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "#LOCKER -21 BALMUTO ST|Toronto, Ontario M4Y1W4",
+                "Longitude": "-79.3873723",
+                "Latitude": "43.6691531"
+            },
+            "TypeId": "300",
+            "OwnershipType": "Condominium\/Strata"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "."
+        },
+        "PostalCode": "M4Y1W4",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/19883837\/LOCKER--21-BALMUTO-ST-Toronto-Ontario-M4Y1W4-Bay-Street-Corridor",
+        "StatusId": "1"
+    },
+    {
+        "Id": "19883853",
+        "MlsNumber": "C4239168",
+        "PublicRemarks": "Crystal Blu Condominium Across From Holt Renfrew & Manulife Centre, Locker  P6 #26 For Sale. Legal Description: Level 6, Unit  26. Price $250.00 Plus Hst.  Locker Maintenance Approx. $39.70\/Month",
+        "Building": {
+            "BathroomTotal": "0",
+            "Type": "Other",
+            "Ammenities": "Storage - Locker"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1462662,
+                "Name": "KRISTA L JACKSON",
+                "Organization": {
+                    "OrganizationID": 177335,
+                    "Name": "BAKER REAL ESTATE INCORPORATED",
+                    "Address": {
+                        "AddressText": "3080 YONGE ST #3056|TORONTO, ON M4N3N1"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "923-4621",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "924-5321",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Emails": [
+                        {
+                            "ContactId": "414348940"
+                        }
+                    ],
+                    "Websites": [
+                        {
+                            "Website": "http:\/\/www.baker-re.com",
+                            "WebsiteTypeId": "1"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "HasEmail": true,
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/177335\/baker-real-estate-incorporated-3080-yonge-st-3056-toronto-on-m4n3n1"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "923-4621",
+                        "AreaCode": "416",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414380694"
+                    }
+                ],
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "KRISTA L",
+                "LastName": "JACKSON",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1462662\/KRISTA-L-JACKSON-3080-YONGE-ST-3056-TORONTO-ON-M4N3N1"
+            }
+        ],
+        "Property": {
+            "Price": "$250",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "#LOCKER -21 BALMUTO ST|Toronto, Ontario M4Y1W4",
+                "Longitude": "-79.3873723",
+                "Latitude": "43.6691531"
+            },
+            "TypeId": "300",
+            "OwnershipType": "Condominium\/Strata"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "."
+        },
+        "PostalCode": "M4Y1W4",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/19883853\/LOCKER--21-BALMUTO-ST-Toronto-Ontario-M4Y1W4-Bay-Street-Corridor",
+        "StatusId": "1"
+    },
+    {
+        "Id": "19885784",
+        "MlsNumber": "C4239217",
+        "PublicRemarks": "Crystal Blu Condominium Across From Holt Renfrew & Manulife Centre, Locker  P6 #27 For Sale. Legal Description: Level 6, Unit  27. Price $250.00 Plus Hst.  Locker Maintenance Approx. $39.70\/Month",
+        "Building": {
+            "BathroomTotal": "0",
+            "Type": "Other",
+            "Ammenities": "Storage - Locker"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1462662,
+                "Name": "KRISTA L JACKSON",
+                "Organization": {
+                    "OrganizationID": 177335,
+                    "Name": "BAKER REAL ESTATE INCORPORATED",
+                    "Address": {
+                        "AddressText": "3080 YONGE ST #3056|TORONTO, ON M4N3N1"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "923-4621",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "924-5321",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Emails": [
+                        {
+                            "ContactId": "414348940"
+                        }
+                    ],
+                    "Websites": [
+                        {
+                            "Website": "http:\/\/www.baker-re.com",
+                            "WebsiteTypeId": "1"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "HasEmail": true,
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/177335\/baker-real-estate-incorporated-3080-yonge-st-3056-toronto-on-m4n3n1"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "923-4621",
+                        "AreaCode": "416",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414380694"
+                    }
+                ],
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "KRISTA L",
+                "LastName": "JACKSON",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1462662\/KRISTA-L-JACKSON-3080-YONGE-ST-3056-TORONTO-ON-M4N3N1"
+            }
+        ],
+        "Property": {
+            "Price": "$250",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "#LOCKER -21 BALMUTO ST|Toronto, Ontario M4Y1W4",
+                "Longitude": "-79.3873723",
+                "Latitude": "43.6691531"
+            },
+            "TypeId": "300",
+            "OwnershipType": "Condominium\/Strata"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "."
+        },
+        "PostalCode": "M4Y1W4",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/19885784\/LOCKER--21-BALMUTO-ST-Toronto-Ontario-M4Y1W4-Bay-Street-Corridor",
+        "StatusId": "1"
+    },
+    {
+        "Id": "19778866",
+        "MlsNumber": "C4214851",
+        "PublicRemarks": "Locker Sold Directly Through The Builder! Must Be A Resident Of The Building To Purchase. Hst Applicable On Closing.",
+        "Building": {
+            "BathroomTotal": "0",
+            "Type": "Other",
+            "Ammenities": "Storage - Locker"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1937060,
+                "Name": "NIKA KROUGLOW",
+                "Organization": {
+                    "OrganizationID": 272131,
+                    "Name": "ONNI (ONTARIO) REALTY INC.",
+                    "Address": {
+                        "AddressText": "177 FORT YORK BLVD|TORONTO, ON M5V0C7"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "260-8200",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "260-8240",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Emails": [
+                        {
+                            "ContactId": "414350331"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "HasEmail": true,
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/272131\/onni-ontario-realty-inc-177-fort-york-blvd-toronto-on-m5v0c7"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "260-2600",
+                        "AreaCode": "416",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414636113"
+                    }
+                ],
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "NIKA",
+                "LastName": "KROUGLOW",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1937060\/NIKA-KROUGLOW-177-FORT-YORK-BLVD-TORONTO-ON-M5V0C7"
+            },
+            {
+                "IndividualID": 1976838,
+                "Name": "ANTHONY JIN-HYUNG CHOI",
+                "Organization": {
+                    "OrganizationID": 272131,
+                    "Name": "ONNI (ONTARIO) REALTY INC.",
+                    "Address": {
+                        "AddressText": "177 FORT YORK BLVD|TORONTO, ON M5V0C7"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "260-8200",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "260-8240",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Emails": [
+                        {
+                            "ContactId": "414350331"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "HasEmail": true,
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/272131\/onni-ontario-realty-inc-177-fort-york-blvd-toronto-on-m5v0c7"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "260-8200",
+                        "AreaCode": "416",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "415518837"
+                    }
+                ],
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "ANTHONY JIN-HYUNG",
+                "LastName": "CHOI",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1976838\/ANTHONY-JIN-HYUNG-CHOI-177-FORT-YORK-BLVD-TORONTO-ON-M5V0C7"
+            }
+        ],
+        "Property": {
+            "Price": "$500",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "20 BRUYERES MEWS|Toronto, Ontario M5V0G8",
+                "Longitude": "-79.400877",
+                "Latitude": "43.6375235"
+            },
+            "Photo": [
+                {
+                    "SequenceId": "1",
+                    "HighResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636694376926230000\/reb82\/highres\/1\/c4214851_1.jpg",
+                    "MedResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636694376926230000\/reb82\/medres\/1\/c4214851_1.jpg",
+                    "LowResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636694376926230000\/reb82\/lowres\/1\/c4214851_1.jpg",
+                    "LastUpdated": "2018-08-09 6:54:52 PM"
+                }
+            ],
+            "TypeId": "300",
+            "OwnershipType": "Condominium\/Strata"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "."
+        },
+        "PostalCode": "M5V0G8",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/19778866\/20-BRUYERES-MEWS-Toronto-Ontario-M5V0G8-Niagara",
+        "StatusId": "1",
+        "PhotoChangeDateUTC": "2018-08-09 10:54:52 PM"
+    },
+    {
+        "Id": "19727937",
+        "MlsNumber": "C4201505",
+        "PublicRemarks": "X2 Condos Condominium Bicycle\/Storage Unit For Sale.",
+        "Building": {
+            "BathroomTotal": "0",
+            "Type": "Other",
+            "Ammenities": "Storage - Locker"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1887658,
+                "Name": "SHARON JULIA EDWARDS",
+                "Organization": {
+                    "OrganizationID": 177335,
+                    "Name": "BAKER REAL ESTATE INCORPORATED",
+                    "Address": {
+                        "AddressText": "3080 YONGE ST #3056|TORONTO, ON M4N3N1"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "923-4621",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "924-5321",
+                            "AreaCode": "416",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Emails": [
+                        {
+                            "ContactId": "414348940"
+                        }
+                    ],
+                    "Websites": [
+                        {
+                            "Website": "http:\/\/www.baker-re.com",
+                            "WebsiteTypeId": "1"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "HasEmail": true,
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/177335\/baker-real-estate-incorporated-3080-yonge-st-3056-toronto-on-m4n3n1"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "923-4621",
+                        "AreaCode": "416",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "414455067"
+                    }
+                ],
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "SHARON JULIA",
+                "LastName": "EDWARDS",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1887658\/SHARON-JULIA-EDWARDS-3080-YONGE-ST-3056-TORONTO-ON-M4N3N1"
+            }
+        ],
+        "Property": {
+            "Price": "$750",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "#LOCKER -101 CHARLES ST E|Toronto, Ontario M4Y0A9",
+                "Longitude": "-79.3805797",
+                "Latitude": "43.6695928"
+            },
+            "TypeId": "300",
+            "OwnershipType": "Condominium\/Strata"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "."
+        },
+        "PostalCode": "M4Y0A9",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/19727937\/LOCKER--101-CHARLES-ST-E-Toronto-Ontario-M4Y0A9-Bay-Street-Corridor",
+        "StatusId": "1"
+    },
+    {
+        "Id": "19894213",
+        "MlsNumber": "K18005424",
+        "PublicRemarks": "Exceptional Rental $1600\/Month, Inclusive .  3 Bedrooms, 2 Baths, Large eat in Kitchen and 2 Fireplaces. Completely furnished including Bedding and Towels. Available Oct 15, 2018 -April 30, 2019, includes cable, internet and ample parking. Sorry NO Pets. Available Immediately.",
+        "Building": {
+            "BathroomTotal": "2",
+            "Bedrooms": "3 + 0",
+            "StoriesTotal": "3",
+            "Type": "Apartment"
+        },
+        "Individual": [
+            {
+                "IndividualID": 1453925,
+                "Name": "EMILY BELL",
+                "Organization": {
+                    "OrganizationID": 55432,
+                    "Name": "BICKERTON BROKERS LIMITED, REAL ESTATE BROKERAGE",
+                    "Logo": "https:\/\/cdn.realtor.ca\/organizations\/en-CA\/lowres\/55432.jpg",
+                    "Address": {
+                        "AddressText": "170 KING STREET EAST P.O. BOX 219|GANANOQUE, ON K7G2T7"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "382-2131",
+                            "AreaCode": "613",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Toll Free",
+                            "PhoneNumber": "932-2131",
+                            "AreaCode": "800",
+                            "PhoneTypeId": "5"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "382-7271",
+                            "AreaCode": "613",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Emails": [
+                        {
+                            "ContactId": "409297623"
+                        }
+                    ],
+                    "Websites": [
+                        {
+                            "Website": "http:\/\/www.bickerton.com",
+                            "WebsiteTypeId": "1"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "HasEmail": true,
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/55432\/bickerton-brokers-limited-real-estate-brokerage-170-king-street-east-po-box-219-gananoque-on-k7g2t7"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "530-7355",
+                        "AreaCode": "613",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Websites": [
+                    {
+                        "Website": "http:\/\/www.bickerton.com",
+                        "WebsiteTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "407744028"
+                    }
+                ],
+                "Photo": "https:\/\/cdn.realtor.ca\/individuals\/lowres\/1453925.jpg",
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "EMILY",
+                "LastName": "BELL",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1453925\/EMILY-BELL-170-KING-STREET-EAST-PO-BOX-219-GANANOQUE-ON-K7G2T7"
+            },
+            {
+                "IndividualID": 1762972,
+                "Name": "WHITNEY KILGORE",
+                "Organization": {
+                    "OrganizationID": 55432,
+                    "Name": "BICKERTON BROKERS LIMITED, REAL ESTATE BROKERAGE",
+                    "Logo": "https:\/\/cdn.realtor.ca\/organizations\/en-CA\/lowres\/55432.jpg",
+                    "Address": {
+                        "AddressText": "170 KING STREET EAST P.O. BOX 219|GANANOQUE, ON K7G2T7"
+                    },
+                    "Phones": [
+                        {
+                            "PhoneType": "Telephone",
+                            "PhoneNumber": "382-2131",
+                            "AreaCode": "613",
+                            "PhoneTypeId": "1"
+                        },
+                        {
+                            "PhoneType": "Toll Free",
+                            "PhoneNumber": "932-2131",
+                            "AreaCode": "800",
+                            "PhoneTypeId": "5"
+                        },
+                        {
+                            "PhoneType": "Fax",
+                            "PhoneNumber": "382-7271",
+                            "AreaCode": "613",
+                            "PhoneTypeId": "4"
+                        }
+                    ],
+                    "Emails": [
+                        {
+                            "ContactId": "409297623"
+                        }
+                    ],
+                    "Websites": [
+                        {
+                            "Website": "http:\/\/www.bickerton.com",
+                            "WebsiteTypeId": "1"
+                        }
+                    ],
+                    "OrganizationType": "Firm",
+                    "Designation": "Brokerage",
+                    "HasEmail": true,
+                    "PermitFreetextEmail": true,
+                    "PermitShowListingLink": true,
+                    "RelativeDetailsURL": "\/office\/firm\/55432\/bickerton-brokers-limited-real-estate-brokerage-170-king-street-east-po-box-219-gananoque-on-k7g2t7"
+                },
+                "Phones": [
+                    {
+                        "PhoneType": "Telephone",
+                        "PhoneNumber": "530-7070",
+                        "AreaCode": "613",
+                        "PhoneTypeId": "1"
+                    }
+                ],
+                "Websites": [
+                    {
+                        "Website": "http:\/\/www.bickerton.com",
+                        "WebsiteTypeId": "1"
+                    }
+                ],
+                "Emails": [
+                    {
+                        "ContactId": "407744728"
+                    }
+                ],
+                "Photo": "https:\/\/cdn.realtor.ca\/individuals\/lowres\/1762972.JPG",
+                "Position": "Salesperson",
+                "PermitFreetextEmail": true,
+                "FirstName": "WHITNEY",
+                "LastName": "KILGORE",
+                "CorporationDisplayTypeId": "0",
+                "PermitShowListingLink": true,
+                "RelativeDetailsURL": "Agent\/1762972\/WHITNEY-KILGORE-170-KING-STREET-EAST-PO-BOX-219-GANANOQUE-ON-K7G2T7"
+            }
+        ],
+        "Property": {
+            "Price": "$1,500",
+            "Type": "Single Family",
+            "Address": {
+                "AddressText": "195 Market ST|Gananoque, Ontario K7G2M6",
+                "Longitude": "-76.1627692460327",
+                "Latitude": "44.3246355493471"
+            },
+            "Photo": [
+                {
+                    "SequenceId": "1",
+                    "HighResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636749485382330000\/reb37\/highres\/4\/k18005424_1.jpg",
+                    "MedResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636749485382330000\/reb37\/medres\/4\/k18005424_1.jpg",
+                    "LowResPath": "https:\/\/cdn.realtor.ca\/listings\/TS636749485382330000\/reb37\/lowres\/4\/k18005424_1.jpg",
+                    "LastUpdated": "2018-10-12 1:42:18 PM"
+                }
+            ],
+            "Parking": [
+                {
+                    "Name": "No Garage"
+                }
+            ],
+            "ParkingSpaceTotal": "6",
+            "TypeId": "300",
+            "OwnershipType": "Freehold"
+        },
+        "Business": {},
+        "Land": {
+            "SizeTotal": "87.65x120|under 1\/2 acre",
+            "AccessType": "Road access"
+        },
+        "PostalCode": "K7G2M6",
+        "RelativeDetailsURL": "\/Residential\/Single-Family\/19894213\/195-Market-ST-Gananoque-Ontario-K7G2M6-05---Gananoque",
+        "StatusId": "1",
+        "PriceChangeDateUTC": "2018-10-11 4:45:20 PM",
+        "PhotoChangeDateUTC": "2018-10-12 5:42:18 PM"
+    }
+]
