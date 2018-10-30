@@ -32,6 +32,7 @@ const seed = async () => {
         password: hashSync(`user${i}`, 10)
     }), seedConfig.numUser)
     await seedGeneric((i) => db.createOffer({
+        listingInfo: `This is listing info for offer ${i}`,
         creator: {
             connect: {
                 email: `user${Math.floor(Math.random() * Math.floor(seedConfig.numUser) + 1)}@email.com`
@@ -39,6 +40,7 @@ const seed = async () => {
         }
     }), seedConfig.numOffer)
     await seedGeneric((i) => db.createTouring({
+        listingInfo: `This is listing info for touring ${i}`,
         creator: {
             connect: {
                 email: `user${Math.floor(Math.random() * Math.floor(seedConfig.numUser) + 1)}@email.com`
