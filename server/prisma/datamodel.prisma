@@ -2,27 +2,48 @@ type User {
   id: ID! @unique
   name: String!
   email: String! @unique
-  offers: [Offer!]!
-  tourings: [Touring!]!
   password: String!
   createdAt: DateTime!
   updatedAt: DateTime!
+  tourings: [Touring!]! @relation(name: "TouringsByUser")
+  offers: [Offer!]! @relation(name: "OffersByUser")
+  savedListings: [Listing!]! @relation(name: "SavedListingsByUser")
 }
 
 type Offer {
   id: ID! @unique
   createdAt: DateTime!
   updatedAt: DateTime!
-  creator: User!
   status: OFFER_STATUS! @default(value: "IN_DRAFT")
+  listing: Listing! @relation(name: "OffersForListing")
+  creator: User! @relation(name: "OffersByUser")
 }
 
 type Touring {
   id: ID! @unique
-  creator: User!
-  status: TOURING_STATUS! @default(value: "IN_DRAFT")
   createdAt: DateTime!
   updatedAt: DateTime!
+  status: TOURING_STATUS! @default(value: "IN_DRAFT")
+  listing: Listing! @relation(name: "TouringsForListing")
+  creator: User! @relation(name: "TouringsByUser")
+}
+
+type Listing {
+  id: ID! @unique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  mlsID: ID @unique
+  mlsUpdatedAt: DateTime
+  mlsCreatedAt: DateTime
+  offers: [Offer!]! @relation(name: "OffersForListing")
+  tourings: [Touring!]! @relation(name: "TouringsForListing")
+  property: Property @relation(name: "ListingsForProperty")
+  savedByUser: [User!]! @relation(name: "SavedListingsByUser")
+}
+
+type Property {
+  id: ID! @unique
+  listingHistory: [Listing!]! @relation(name: "ListingsForProperty")
 }
 
 enum OFFER_STATUS {
