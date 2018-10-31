@@ -1,8 +1,10 @@
-import * as React from 'react';
+import * as React from 'react'
 import AuthModal from '../AuthModal'
+import AuthedApp from '../AuthedApp'
 import styled from 'styled-components'
+import { Switch } from 'react-router-dom'
 
-const sofa = require('./assets/sofa.jpg');
+const sofa = require('../../../assets/sofa.jpg');
 
 const Bg = styled.html`
     background: url(${sofa}) no-repeat center center fixed;
@@ -17,16 +19,29 @@ const Bg = styled.html`
 }
 `
 
-class App extends React.Component {
+class App extends React.Component<{}, { authenticated: boolean }> {
+    constructor(props) {
+        super(props)
+        this.state = {
+            authenticated: localStorage.getItem('token') ? true : false
+        }
+    }
+
     render() {
         return (
-            <Bg>
-                <AuthModal
-                    visible={true}
-                    toggleBtnText='Login'
-                    toggleBtnType='primary'
-                ></AuthModal>
-            </Bg>)
+            <div>
+                {this.state.authenticated   ?
+                    <AuthedApp></AuthedApp> :
+                    <Bg>
+                        <AuthModal
+                            visible={true}
+                            toggleBtnText='Login'
+                            toggleBtnType='primary'
+                        ></AuthModal>
+                    </Bg>
+                }
+            </div>
+        )
     }
 }
 

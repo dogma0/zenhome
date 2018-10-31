@@ -56,6 +56,7 @@ export default class extends React.Component
                             data.login && localStorage.setItem('token', data.login.token)
                             data.signup && localStorage.setItem('token', data.signup.token)
                             this.setState({ visible: false });
+                            location.reload()
                         }
                     });
                 form.resetFields();
