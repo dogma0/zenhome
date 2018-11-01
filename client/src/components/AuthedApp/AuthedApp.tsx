@@ -26,6 +26,7 @@ export default class extends React.Component<{}, { selectedMenu: string }> {
                     <Menu.Item key="2">Offer</Menu.Item>
                     <Menu.Item key="3">Legal Consultation</Menu.Item>
                     <Menu.Item disabled={true} key="_">Search Homes (Coming Soon)</Menu.Item>
+                    <Menu.Item key="4"><Button onClick={(e) => {localStorage.removeItem('token');location.reload()}}>Logout<Icon type="logout"></Icon></Button></Menu.Item>
                 </Menu>
             )
             return (
