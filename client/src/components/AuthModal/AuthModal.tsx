@@ -24,7 +24,7 @@ export default class extends React.Component
     <{ visible: boolean, toggleBtnType: ButtonType, toggleBtnText: String },
     { visible: boolean, confirmLoading: boolean }> {
 
-    private formRef: any
+    formRef
 
     state = {
         visible: this.props.visible,

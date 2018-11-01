@@ -16,6 +16,9 @@ export default (props) => {
                 )}
             </FormItem>
             <AuthInputForm form={form} />
+            <FormItem>
+                    <a onClick={props.handleIsLoginChange}>Login</a>
+            </FormItem>
         </div>
     )
 }
