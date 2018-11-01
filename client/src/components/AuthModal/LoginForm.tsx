@@ -10,7 +10,12 @@ export default (props) => {
         <div>
             <AuthInputForm form={form} />
             <FormItem>
-                <a className="login-form-forgot" href="">Forgot password</a>
+                <div>
+                    <a className="login-form-forgot" href="">Forgot password</a>
+                </div>
+                <div>
+                    <a onClick={props.handleIsLoginChange}>Sign Up</a>
+                </div>
             </FormItem>
         </div>
     )
