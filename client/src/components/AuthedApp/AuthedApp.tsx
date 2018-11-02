@@ -14,7 +14,7 @@ export default class extends React.Component<{}, { selectedMenu: string }> {
     render = () => {
         const ResponsiveNav = () => {
 
-            const breakpt = 650
+            const breakpt = 800 
             const menu = (mode) => (
                 <Menu
                     mode={mode}
