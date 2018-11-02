@@ -5,7 +5,8 @@
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "strictNullChecks": true
   },
   "exclude": [
     "node_modules"
