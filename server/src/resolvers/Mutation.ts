@@ -33,39 +33,24 @@ export const Mutation = {
       user,
     }
   },
-  createOffer: async (_, { }, ctx) => {
-    return await ctx.db.createOffer({
-      user: {
+  createShowing: async (_, { addr, datetime, phone }, ctx) => {
+    return await ctx.db.createShowing({
+      address: addr,
+      datetime: datetime,
+      phoneNumber: phone,
+      creator: {
         connect: {
           id: getUserId(ctx)
         }
       }
     })
   },
-  deleteOffer: async (_, { id }, ctx) => {
-    if (!await ctx.db.$exists.offer({
+  deleteShowing: async (_, { id }, ctx) => {
+    if (!await ctx.db.$exists.Showing({
       id: id,
       creator: { id: getUserId(ctx) }
     })) throw new AuthError
-    return await ctx.db.deleteOffer({
-      id: id
-    })
-  },
-  createTouring: async (_, { }, ctx) => {
-    return await ctx.db.createTouring({
-      user: {
-        connect: {
-          id: getUserId(ctx)
-        }
-      }
-    })
-  },
-  deleteTouring: async (_, { id }, ctx) => {
-    if (!await ctx.db.$exists.touring({
-      id: id,
-      creator: { id: getUserId(ctx) }
-    })) throw new AuthError
-    return await ctx.db.deleteTouring({
+    return await ctx.db.deleteShowing({
       id: id
     })
   },

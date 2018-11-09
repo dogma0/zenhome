@@ -28,7 +28,7 @@ function FAQ() {
 class ServiceDescription extends React.Component {
   render() {
     return (<ul>
-      <li>No pressue home touring experiences</li>
+      <li>No pressue home showing experiences</li>
       <li>World class but local kbuying agents</li>
     </ul>)
   }
