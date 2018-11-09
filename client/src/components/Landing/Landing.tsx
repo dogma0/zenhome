@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Row, Col } from 'antd';
+import styled from 'styled-components'
 import AuthModal from '../AuthModal'
 
 function UserJounry() {
@@ -27,7 +28,7 @@ function FAQ() {
 class ServiceDescription extends React.Component {
   render() {
     return (<ul>
-      <li>No pressue home touring experiences</li>
+      <li>No pressue home showing experiences</li>
       <li>World class but local kbuying agents</li>
     </ul>)
   }
@@ -41,16 +42,33 @@ class SavingCaculator extends React.Component {
   }
 }
 
+
+const GradientDiv = styled.div`
+  background: linear-gradient(to bottom right, blue, #33ffbd);
+  text-align: center
+`
+const TitleH1 = styled.h1`
+  padding: 200px
+`
+
+
 export default class Landing extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div>
+        {/* <Row>
+          <Col span={24}>
+            <GradientDiv>
+              <h1>Hello World</h1>
+            </GradientDiv>
+          </Col>
+        </Row> */}
         <Row
           gutter={{ xs: 8, sm: 16, md: 24, lg: 32, xl: 40 }}
           justify='space-around'
           type='flex'
         >
-          <Col span={12}>
+          {/* <Col span={12}>
             <AuthModal
             toggleBtnText='Book a Home Tour' 
             toggleBtnType='primary'/>
@@ -59,7 +77,7 @@ export default class Landing extends React.Component {
             <AuthModal
             toggleBtnText='Make an Offer'
             toggleBtnType='default'/>
-          </Col>
+          </Col> */}
         </Row>
         <Row>
           <SavingCaculator></SavingCaculator>

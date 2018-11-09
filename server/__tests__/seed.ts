@@ -5,13 +5,11 @@ const port = process.argv[2]
 
 const db = new Prisma({
     endpoint: `http://localhost:${port}`,
-    // secret: "mysecret45wrong"
 })
 
 const seedConfig = {
     numUser: 10,
-    numOffer: 20,
-    numTouring: 30
+    // numShowing: 30
 }
 
 const seedGeneric = async (f: (number) => Object, endloop) => {
@@ -32,20 +30,16 @@ const seed = async () => {
         email: `user${i}@email.com`,
         password: hashSync(`user${i}`, 10)
     }), seedConfig.numUser)
-    await seedGeneric((i) => db.createOffer({
-        creator: {
-            connect: {
-                email: `user${Math.floor(Math.random() * Math.floor(seedConfig.numUser) + 1)}@email.com`
-            }
-        }
-    }), seedConfig.numOffer)
-    await seedGeneric((i) => db.createTouring({
-        creator: {
-            connect: {
-                email: `user${Math.floor(Math.random() * Math.floor(seedConfig.numUser) + 1)}@email.com`
-            }
-        }
-    }), seedConfig.numTouring)
+    // await seedGeneric((i) => db.createShowing({
+    //     address: `This is listing info for Showing ${i}`,
+    //     datetime: `This is datetime for Showing ${i}`,
+    //     phoneNumber: `This is phone number for Showing ${i}`,
+    //     creator: {
+    //         connect: {
+    //             email: `user${Math.floor(Math.random() * Math.floor(seedConfig.numUser) + 1)}@email.com`
+    //         }
+    //     }
+    // }), seedConfig.numShowing)
 }
 
 seed()

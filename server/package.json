@@ -9,14 +9,18 @@
   "scripts": {
     "start": "cd src && ts-node index.ts",
     "test": "jest",
-    "migrate": "cd prisma && prisma deploy",
+    "migrate": "cd prisma && export PRISMA_MANAGEMENT_API_SECRET='mysecret42' && prisma deploy",
     "reset-seed": "yarn reset && yarn seed",
     "reset": "cd prisma && prisma reset -f",
     "seed": "ts-node __tests__/seed.ts 4466",
-    "test-migrate": "cd __tests__/test_fixtures && prisma deploy", 
+    "test-migrate": "cd __tests__/test_fixtures && export PRISMA_MANAGEMENT_API_SECRET='mysecret45' && prisma deploy",
     "test-reset-seed": "yarn test-reset && yarn test-seed",
     "test-reset": "cd __tests__/test_fixtures/ && prisma reset -f",
-    "test-seed": "ts-node __tests__/seed.ts 5000"
+    "test-seed": "ts-node __tests__/seed.ts 5000",
+    "init-test-prisma": "cd __tests__/test_fixtures && docker-compose up -d",
+    "init-prisma": "cd prisma && docker-compose up -d",
+    "init-all-prisma": "yarn migrate  && yarn test-migrate && yarn init-prisma && yarn init-test-prisma",
+    "init-project": "yarn init-all-prisma && yarn reset-seed && yarn test-reset-seed"
   },
   "dependencies": {
     "@types/jsonwebtoken": "^7.2.8",
@@ -30,6 +34,7 @@
   "devDependencies": {
     "@types/bcrypt": "3.0.0",
     "@types/jest": "^23.3.5",
+    "@types/node": "^10.12.0",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.4",
     "ts-node": "7.0.1",

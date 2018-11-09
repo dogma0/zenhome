@@ -2,17 +2,14 @@ scalar DateTime
 
 type Query {
   me: User
-  testAllOffers: [Offer!]!
-  testAllTourings: [Touring!]!
+  testAllShowings: [Showing!]!
 }
 
 type Mutation {
   signup(name: String!, email: String!, password: String!): AuthPayload!
   login(email: String!, password: String!): AuthPayload!
-  createOffer: Offer!
-  deleteOffer(id: ID!): Offer!
-  createTouring: Touring!
-  deleteTouring(id: ID!): Touring!
+  deleteShowing(id: ID!): Showing!
+  createShowing(addr: String!, datetime: String!, phone: String!): Showing!
 }
 
 type AuthPayload {
@@ -25,35 +22,20 @@ type User {
   email: String!
   name: String!
   createdAt: DateTime!
-  offers: [Offer!]!
-  tourings: [Touring!]!
+  showings: [Showing!]!
 }
 
-type Offer {
+type Showing {
   id: ID!
   createdAt: DateTime!
   updatedAt: DateTime!
-  status: OFFER_STATUS!
+  address: String!
+  phoneNumber: String!
+  datetime: String!
+  status: SHOWING_STATUS!
 }
 
-type Touring {
-  id: ID!
-  createdAt: DateTime!
-  updatedAt: DateTime!
-  status: OFFER_STATUS!
-}
-
-enum OFFER_STATUS {
-  IN_DRAFT
-  PENDING_REVIEW
-  REVIEWED
-  SUBMITTED
-  ACCEPTED
-  REJECTED
-  CANCELED
-}
-
-enum TOURING_STATUS {
+enum SHOWING_STATUS {
   IN_DRAFT
   PENDING_SELLER_CONFIRMATION
   CONFIMED_BY_SELLER

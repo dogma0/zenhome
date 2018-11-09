@@ -21,13 +21,13 @@ const LOGIN_MUTATION = gql`
 `
 
 export default class extends React.Component
-    <{ toggleBtnType: ButtonType, toggleBtnText: String },
-    { visible: Boolean, confirmLoading: Boolean }> {
+    <{ visible: boolean, toggleBtnType: ButtonType, toggleBtnText: String },
+    { visible: boolean, confirmLoading: boolean }> {
 
-    private formRef: any
+    formRef
 
     state = {
-        visible: false, 
+        visible: this.props.visible,
         confirmLoading: false,
     }
 
@@ -56,6 +56,7 @@ export default class extends React.Component
                             data.login && localStorage.setItem('token', data.login.token)
                             data.signup && localStorage.setItem('token', data.signup.token)
                             this.setState({ visible: false });
+                            location.reload()
                         }
                     });
                 form.resetFields();

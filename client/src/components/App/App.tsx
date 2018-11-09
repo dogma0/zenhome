@@ -1,21 +1,47 @@
-import * as React from 'react';
-import Landing from '../Landing'
-import Header from '../Heading'
-import { Route, Link, Switch} from 'react-router-dom'
-import { Switch as AntSwitch} from 'antd';
+import * as React from 'react'
+import AuthModal from '../AuthModal'
+import AuthedApp from '../AuthedApp'
+import styled from 'styled-components'
+import { Switch } from 'react-router-dom'
 
-class App extends React.Component {
+const sofa = require('../../../assets/sofa.jpg');
+
+const Bg = styled.html`
+    background: url(${sofa}) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+    height: 850px;
+    text-align: center;
+    line-height: 850px;
+    white-space: no-wrap;
+}
+`
+
+class App extends React.Component<{}, { authenticated: boolean }> {
+    constructor(props) {
+        super(props)
+        this.state = {
+            authenticated: localStorage.getItem('token') ? true : false
+        }
+    }
+
     render() {
         return (
             <div>
-                <Header />
-                <Switch>
-                    <Route exact path="/" render={()=> <Landing/>}/>
-                    <Route exact path="/app" render={()=> <p>APP PAGE</p>}/>
-                </Switch>
-                <Link to="/app">go to app</Link>
-                <Link to="/">go home</Link>
-            </div>)
+                {this.state.authenticated   ?
+                    <AuthedApp></AuthedApp> :
+                    <Bg>
+                        <AuthModal
+                            visible={true}
+                            toggleBtnText='Login'
+                            toggleBtnType='primary'
+                        ></AuthModal>
+                    </Bg>
+                }
+            </div>
+        )
     }
 }
 

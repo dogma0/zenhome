@@ -49,6 +49,8 @@ class AuthForm extends React.Component<IAuthForm> {
 
         const authAbstracted = isLoginForm ? loginMutation : signupMutation
 
+        const handleIsLoginChange = () => {this.setState({ isLoginForm: !isLoginForm }) }
+
         return (
             <Modal
                 visible={visible}
@@ -59,16 +61,10 @@ class AuthForm extends React.Component<IAuthForm> {
                 confirmLoading={confirmLoading}
                 destroyOnClose={true}
             >
-                <Tabs
-                    defaultActiveKey="1"
-                    onChange={() => { this.setState({ isLoginForm: !isLoginForm }) }}>
-                    <TabPane tab="Login" key="1">
-                        <LoginForm form={form} />
-                    </TabPane>
-                    <TabPane tab="Signup" key="2">
-                        <SignupForm form={form} />
-                    </TabPane>
-                </Tabs>
+                {this.state.isLoginForm ? 
+                    <LoginForm form={form} handleIsLoginChange={handleIsLoginChange}/> :
+                    <SignupForm form={form} handleIsLoginChange={handleIsLoginChange}/>
+                }
                 {(loginError) ?
                     // console.log(JSON.stringify(loginError)):
                     <div>
