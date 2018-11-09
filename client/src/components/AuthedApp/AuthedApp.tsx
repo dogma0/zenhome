@@ -24,9 +24,9 @@ export default class extends React.Component<{}, { selectedMenu: string }> {
                 >
                     <Menu.Item key="1">Showing</Menu.Item>
                     <Menu.Item key="2">Offer</Menu.Item>
-                    <Menu.Item key="3">Legal Consultation</Menu.Item>
+                    {/* <Menu.Item key="3">Legal Consultation</Menu.Item> */}
                     <Menu.Item disabled={true} key="_">Search Homes (Coming Soon)</Menu.Item>
-                    <Menu.Item key="4"><Button onClick={(e) => {localStorage.removeItem('token');location.reload()}}>Logout<Icon type="logout"></Icon></Button></Menu.Item>
+                    <Menu.Item key="3"><Button onClick={(e) => {localStorage.removeItem('token');location.reload()}}>Logout<Icon type="logout"></Icon></Button></Menu.Item>
                 </Menu>
             )
             return (
@@ -50,6 +50,7 @@ export default class extends React.Component<{}, { selectedMenu: string }> {
                 </div>
             )
         }
+        console.log("Rendered AuthedApp")
         return (
             <div>
                 <Row id='nav'>
@@ -62,9 +63,8 @@ export default class extends React.Component<{}, { selectedMenu: string }> {
                         <div style={{ padding: '0 50px' }}>
                             {(this.state.selectedMenu === '1') ?
                                 <Showings />
-                                : (this.state.selectedMenu === '2') ?
-                                    <Offers />
-                                    : <LegalConsultations />
+                                : <Offers />
+                                    // : <LegalConsultations />
                             }
                         </div>
                     </Col>

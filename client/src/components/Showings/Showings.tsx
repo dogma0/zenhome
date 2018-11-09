@@ -6,7 +6,8 @@ import { IconComponent } from 'antd/lib/icon';
 import styled from 'styled-components'
 import ShowingModalFormPage from './ShowingModalFormPage'
 import { url } from 'inspector';
-
+import { Query } from 'react-apollo'
+import gql from 'graphql-tag';
 
 class NewShowing extends React.Component {
     render = () => {
@@ -24,7 +25,7 @@ class NewShowing extends React.Component {
         `
         return (
             <Bg>
-                <ShowingModalFormPage btnTitle="Book a Showing"/>
+                <ShowingModalFormPage btnTitle="Book a Showing" />
             </Bg>
         )
     }
@@ -63,13 +64,14 @@ class ShowingDescription extends React.Component
 
             return (
                 <div>
-                    <Icon
-                        type={statusDisplayMap[showingStatus].type}
-                        theme='twoTone' />
-                    <span>
-                        {statusDisplayMap[showingStatus].msg}
-                    </span>
-                    <ShowingModalFormPage btnTitle="Edit" />
+                    <div style={{ padding: "20px 0px 20px 0px" }}>
+                        <Icon
+                            type={statusDisplayMap[showingStatus].type}
+                            theme='twoTone' />
+                        <span>
+                            {statusDisplayMap[showingStatus].msg}
+                        </span>
+                    </div>
                 </div>
             )
         }
@@ -81,57 +83,68 @@ class ShowingDescription extends React.Component
     }
 }
 
-const ShowingTitle = ({ addr, url, date }) => (
+const ShowingTitle = ({ addr, url, datetime }) => (
     <div>
         <span>Showing Appointment for </span>
         <a href="https://realtor.ca">
             {addr}
         </a>
-        <span> on {date}</span>
+        <span> on {datetime}</span>
     </div>
 )
 
 class ShowingList extends React.Component {
     render = () => {
-        const data = [
+        const USER_SHOWINGS = gql`
             {
-                addr: '123 Yonge st',
-                status: 'IN_DRAFT',
-                date: '18-09-21'
-            },
-            {
-                addr: '123 Yonge st',
-                status: 'VIEWER_ATTENDED',
-                date: '18-09-21'
-            },
-            {
-                addr: '123 Yonge st',
-                status: 'PENDING_SELLER_CONFIRMATION',
-                date: '18-09-21'
-            },
-        ];
+                me {
+                    showings {
+                        id
+                        address
+                        phoneNumber
+                        datetime
+                        status
+                    }
+                }        
+            } 
+            `
 
+        console.log('Rendered ShowingList')
         return (
-            <List
-                itemLayout="horizontal"
-                dataSource={data}
-                renderItem={item => (
-                    <List.Item>
-                        <List.Item.Meta
-                            title={<ShowingTitle
-                                addr={item.addr}
-                                url="realtor.ca"
-                                date="18-09-21" />}
-                            description={<ShowingDescription showingStatus={item.status} />}
-                        />
-                    </List.Item>
-                )}
-            />
+            <Query query={USER_SHOWINGS}>
+                {
+                    ({ loading, error, data }) => {
+                        return (
+                            <List
+                                itemLayout="horizontal"
+                                dataSource={!(data.me) ? [] : data.me.showings}
+                                renderItem={item => { 
+                                    console.log(`datetime: ${item.datetime}`)
+                                    const datetime = JSON.parse(item.datetime)
+                                    return (
+                                    <List.Item>
+                                        <List.Item.Meta
+                                            title={<ShowingTitle
+                                                addr={item.address}
+                                                url="realtor.ca"
+                                                datetime={`${datetime.date} from ${datetime.time[0]} to ${datetime.time[1]}`} />}
+                                            description={<ShowingDescription showingStatus={item.status} />}
+                                            style={{ padding: "0px 0px 90px 0px" }}
+                                        />
+                                    </List.Item>
+                                    )
+                                }}
+                            />
+                        )
+                    }
+                }
+            </Query>
         )
     }
 }
 export default class extends React.Component {
     render = () => {
+        console.log("Rendered Showings")
         return (
             <div>
                 <NewShowing />
