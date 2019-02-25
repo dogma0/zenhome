@@ -72,7 +72,7 @@ export default class extends React.Component<{}, { selectedMenu: string }> {
                 <Row>
                     <Col>
                         <div style={{ textAlign: 'center', background: 'inherit' }}>
-                            OnionHome
+                            ZenHome
                 </div>
                     </Col>
                 </Row>
